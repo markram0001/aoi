@@ -70,15 +70,16 @@ def title_matches(title):
 
 
 # ---------------------------------------
-# 1 & 2: TOP 100 POSTS
+# 1 & 2: TOP 100 POSTS (PullPush)
 # ---------------------------------------
 
 def analyze_top100():
-    # UPDATED: use api.reddit.com to avoid 403
-    url = "https://api.reddit.com/r/all/top?limit=100&t=day"
-    print("DEBUG: Running script version with URL =", url)
+    # PullPush: top posts from r/all
+    url = "https://api.pullpush.io/reddit/search/submission/?subreddit=all&sort=top&size=100"
+    print("DEBUG: Using PullPush URL =", url)
+
     data = fetch_json(url)
-    posts = data["data"]["children"]
+    posts = data.get("data", [])
 
     total_points_top100 = 0
     ai_points_top100 = 0
@@ -88,8 +89,8 @@ def analyze_top100():
     all_top100_posts = []
 
     for p in posts:
-        score = p["data"]["score"]
-        title = p["data"]["title"]
+        score = p.get("score", 0)
+        title = p.get("title", "")
 
         total_points_top100 += score
 
@@ -124,25 +125,25 @@ def analyze_top100():
 
 
 # ---------------------------------------
-# 3: ALL AI POSTS (first 100 search results)
+# 3: ALL AI POSTS (PullPush search)
 # ---------------------------------------
 
 def analyze_all_ai_posts():
-    query = "+".join(["ai", "artificial intelligence", "agi", "openai", "chatgpt"])
+    query = "ai OR 'artificial intelligence' OR agi OR openai OR chatgpt"
 
-    # UPDATED: use api.reddit.com to avoid 403
-    url = f"https://api.reddit.com/search?q={query}&limit=100"
+    url = f"https://api.pullpush.io/reddit/search/submission/?q={query}&size=100"
+    print("DEBUG: Using PullPush search URL =", url)
 
     data = fetch_json(url)
-    posts = data["data"]["children"]
+    posts = data.get("data", [])
 
     ai_points_all = 0
     ai_count_all = 0
     ai_posts_all = []
 
     for p in posts:
-        score = p["data"]["score"]
-        title = p["data"]["title"]
+        score = p.get("score", 0)
+        title = p.get("title", "")
 
         if title_matches(title):
             ai_points_all += score
