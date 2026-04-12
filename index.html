@@ -32,6 +32,26 @@
 
 </div>
 
+<!-- NEW: Metrics Images -->
+<div style="display:flex; gap:30px; margin-top:40px;">
+
+  <div style="flex:1; text-align:center;">
+    <h3>Density of Upvotes</h3>
+    <img src="data/density_plot.png" style="width:100%; border:1px solid #ccc;">
+  </div>
+
+  <div style="flex:1; text-align:center;">
+    <h3>Daily X1 (AI Upvote Share)</h3>
+    <img src="data/X1_timeseries.png" style="width:100%; border:1px solid #ccc;">
+  </div>
+
+  <div style="flex:1; text-align:center;">
+    <h3>Daily X2 (AI Hits in Top 100)</h3>
+    <img src="data/X2_timeseries.png" style="width:100%; border:1px solid #ccc;">
+  </div>
+
+</div>
+
 <script>
 async function loadRedditData() {
   const response = await fetch("data/reddit.json");
