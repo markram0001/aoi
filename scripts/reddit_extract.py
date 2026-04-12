@@ -74,7 +74,8 @@ def title_matches(title):
 # ---------------------------------------
 
 def analyze_top100():
-    url = "https://www.reddit.com/r/all/top.json?limit=100&t=day"
+    # UPDATED: use api.reddit.com to avoid 403
+    url = "https://api.reddit.com/r/all/top?limit=100&t=day"
     data = fetch_json(url)
     posts = data["data"]["children"]
 
@@ -83,7 +84,7 @@ def analyze_top100():
     ai_count_top100 = 0
 
     ai_posts_top100 = []
-    all_top100_posts = []   # NEW: store all posts
+    all_top100_posts = []
 
     for p in posts:
         score = p["data"]["score"]
@@ -91,13 +92,11 @@ def analyze_top100():
 
         total_points_top100 += score
 
-        # Store all posts
         all_top100_posts.append({
             "title": title,
             "score": score
         })
 
-        # AI matching
         if title_matches(title):
             ai_points_top100 += score
             ai_count_top100 += 1
@@ -106,11 +105,9 @@ def analyze_top100():
                 "score": score
             })
 
-    # Sort both lists by score descending
     all_top100_posts.sort(key=lambda x: x["score"], reverse=True)
     ai_posts_top100.sort(key=lambda x: x["score"], reverse=True)
 
-    # Score vectors
     ai_scores_top100 = [p["score"] for p in ai_posts_top100]
     all_scores_top100 = [p["score"] for p in all_top100_posts]
 
@@ -131,7 +128,10 @@ def analyze_top100():
 
 def analyze_all_ai_posts():
     query = "+".join(["ai", "artificial intelligence", "agi", "openai", "chatgpt"])
-    url = f"https://www.reddit.com/search.json?q={query}&limit=100"
+
+    # UPDATED: use api.reddit.com to avoid 403
+    url = f"https://api.reddit.com/search?q={query}&limit=100"
+
     data = fetch_json(url)
     posts = data["data"]["children"]
 
@@ -151,10 +151,7 @@ def analyze_all_ai_posts():
                 "score": score
             })
 
-    # Sort by score descending
     ai_posts_all.sort(key=lambda x: x["score"], reverse=True)
-
-    # Score vector
     ai_scores_all = [p["score"] for p in ai_posts_all]
 
     return ai_points_all, ai_count_all, ai_posts_all, ai_scores_all
@@ -191,7 +188,6 @@ def main():
             "ai_posts_top100": ai_posts_top100,
             "ai_scores_top100": ai_scores_top100,
 
-            # NEW: full sorted top 100
             "all_top100_posts": all_top100_posts,
             "all_scores_top100": all_scores_top100,
 
