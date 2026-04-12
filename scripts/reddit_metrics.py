@@ -1,93 +1,90 @@
 import json
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from datetime import datetime
 import os
 
 # -----------------------------
-# Load today's JSON
+# Load reddit.json
 # -----------------------------
 with open("data/reddit.json", "r", encoding="utf-8") as f:
     dat = json.load(f)
 
+date_str = dat["date"]
 r = dat["reddit"]
 
-# Extract date
-the_date = pd.to_datetime(dat["date"]).date()
-
 # -----------------------------
-# Compute metrics
+# Extract scalars
 # -----------------------------
 total_points = r["total_points_top100"]
 ai_points = r["ai_points_top100"]
 
-X1 = ai_points / total_points
-X2 = r["ai_count_top100"]
-
-# Score distributions
-dist_overall = r["all_scores_top100"]
-dist_ai = r["ai_scores_all"]   # <-- requested change
+# -----------------------------
+# Extract vectors
+# -----------------------------
+all_scores_top100 = r["all_scores_top100"]
+ai_scores_all = r["ai_scores_all"]
 
 # -----------------------------
-# Update daily.csv
+# Helper: append scalar as rows
 # -----------------------------
-today_row = pd.DataFrame([{
-    "date": the_date,
-    "X1": X1,
-    "X2": X2
-}])
+def update_scalar_csv(path, date, value):
+    row = pd.DataFrame([{
+        "date": date,
+        "value": value
+    }])
 
-csv_path = "data/daily.csv"
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        df = pd.concat([df, row]).drop_duplicates(
+            subset=["date"],
+            keep="last"
+        )
+    else:
+        df = row
 
-if os.path.exists(csv_path):
-    daily = pd.read_csv(csv_path, parse_dates=["date"])
-    daily = pd.concat([daily, today_row]).drop_duplicates()
-else:
-    daily = today_row
-
-# ✅ FIX: ensure matplotlib-compatible datetime
-daily["date"] = pd.to_datetime(daily["date"])
-
-daily.to_csv(csv_path, index=False)
+    df.to_csv(path, index=False)
 
 # -----------------------------
-# Save plots into data/
+# Helper: append vector as column
 # -----------------------------
-sns.set_theme(style="whitegrid")
+def update_vector_csv(path, date, values):
+    series = pd.Series(values)
 
-# Density plot
-df_density = pd.DataFrame({
-    "score": dist_overall + dist_ai,
-    "group": (["Overall Top 100"] * len(dist_overall)) +
-             (["AI All"] * len(dist_ai))
-})
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+    else:
+        df = pd.DataFrame()
 
-plt.figure(figsize=(8, 5))
-sns.kdeplot(data=df_density, x="score", hue="group", fill=True, alpha=0.4)
-plt.title("Density of Upvotes")
-plt.xlabel("Score (Upvotes)")
-plt.ylabel("Density")
-plt.tight_layout()
-plt.savefig("data/density_plot.png", dpi=300)
-plt.close()
+    df[date] = series
+    df.to_csv(path, index=False)
 
-# X1 time series
-plt.figure(figsize=(8, 5))
-plt.plot(daily["date"], daily["X1"], marker="o", color="steelblue")
-plt.title("Daily X1 (AI Upvote Share)")
-plt.xlabel("Date")
-plt.ylabel("X1")
-plt.tight_layout()
-plt.savefig("data/X1_timeseries.png", dpi=300)
-plt.close()
+# -----------------------------
+# Write scalar CSVs
+# -----------------------------
+update_scalar_csv(
+    "data/total_points_top100.csv",
+    date_str,
+    total_points
+)
 
-# X2 time series
-plt.figure(figsize=(8, 5))
-plt.plot(daily["date"], daily["X2"], marker="o", color="darkred")
-plt.title("Daily X2 (AI Hits in Top 100)")
-plt.xlabel("Date")
-plt.ylabel("X2")
-plt.tight_layout()
-plt.savefig("data/X2_timeseries.png", dpi=300)
-plt.close()
+update_scalar_csv(
+    "data/ai_points_top100.csv",
+    date_str,
+    ai_points
+)
+
+# -----------------------------
+# Write vector CSVs
+# -----------------------------
+update_vector_csv(
+    "data/all_scores_top100.csv",
+    date_str,
+    all_scores_top100
+)
+
+update_vector_csv(
+    "data/ai_scores_all.csv",
+    date_str,
+    ai_scores_all
+)
+
+print("✅ CSV extraction complete")
