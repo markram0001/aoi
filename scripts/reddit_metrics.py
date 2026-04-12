@@ -13,9 +13,9 @@ with open("data/reddit.json", "r", encoding="utf-8") as f:
 
 r = dat["reddit"]
 
-# Extract date
+# Extract date (unchanged for plotting)
 the_date = pd.to_datetime(dat["date"]).date()
-date_col = str(the_date)
+date_col = dat["date"]  # STRING for CSV column header
 
 # -----------------------------
 # Compute metrics
@@ -26,50 +26,36 @@ ai_points = r["ai_points_top100"]
 X1 = ai_points / total_points
 X2 = r["ai_count_top100"]
 
-# Score distributions
+# Score distributions (vectors)
 dist_overall = r["all_scores_top100"]
 dist_ai = r["ai_scores_all"]
 
 # -----------------------------
-# Write column-based CSVs
+# NEW: write vectors as column-based CSVs
 # -----------------------------
 
-# ---- total_points.csv ----
-total_points_path = "data/total_points.csv"
-
+# ---- total_points.csv (Top 100 overall scores) ----
+total_path = "data/total_points.csv"
 try:
-    total_df = pd.read_csv(total_points_path)
+    total_df = pd.read_csv(total_path)
 except FileNotFoundError:
-    total_df = pd.DataFrame({"metric": ["top100_total"]})
+    total_df = pd.DataFrame()
 
-if "top100_total" not in total_df["metric"].values:
-    total_df = total_df._append(
-        {"metric": "top100_total"},
-        ignore_index=True
-    )
+total_df[date_col] = pd.Series(dist_overall)
+total_df.to_csv(total_path, index=False)
 
-total_df[date_col] = total_points
-total_df.to_csv(total_points_path, index=False)
-
-# ---- ai_points.csv ----
-ai_points_path = "data/ai_points.csv"
-
+# ---- ai_points.csv (AI scores) ----
+ai_path = "data/ai_points.csv"
 try:
-    ai_df = pd.read_csv(ai_points_path)
+    ai_df = pd.read_csv(ai_path)
 except FileNotFoundError:
-    ai_df = pd.DataFrame({"metric": ["top100_ai"]})
+    ai_df = pd.DataFrame()
 
-if "top100_ai" not in ai_df["metric"].values:
-    ai_df = ai_df._append(
-        {"metric": "top100_ai"},
-        ignore_index=True
-    )
-
-ai_df[date_col] = ai_points
-ai_df.to_csv(ai_points_path, index=False)
+ai_df[date_col] = pd.Series(dist_ai)
+ai_df.to_csv(ai_path, index=False)
 
 # -----------------------------
-# Update daily.csv (row-based)
+# Update daily.csv (unchanged)
 # -----------------------------
 today_row = pd.DataFrame([{
     "date": the_date,
@@ -81,17 +67,14 @@ csv_path = "data/daily.csv"
 
 if os.path.exists(csv_path):
     daily = pd.read_csv(csv_path, parse_dates=["date"])
-    daily = pd.concat([daily, today_row]).drop_duplicates(
-        subset=["date"],
-        keep="last"
-    )
+    daily = pd.concat([daily, today_row]).drop_duplicates()
 else:
     daily = today_row
 
 daily.to_csv(csv_path, index=False)
 
 # -----------------------------
-# Save plots
+# Save plots into data/
 # -----------------------------
 sns.set_theme(style="whitegrid")
 
