@@ -14,7 +14,6 @@ the_date <- as.Date(dat$date)
 total_points <- r$total_points_top100
 ai_points <- r$ai_points_top100
 X1 <- ai_points / total_points
-
 X2 <- r$ai_count_top100
 
 # Score distributions
@@ -39,13 +38,17 @@ if (file.exists("data/daily.csv")) {
 # Save updated CSV
 write_csv(daily, "data/daily.csv")
 
-# Density plot: overall vs AI
+# -----------------------------
+# Save plots into data/
+# -----------------------------
+
+# Density plot
 df_density <- bind_rows(
   tibble(score = dist_overall, group = "Overall Top 100"),
   tibble(score = dist_ai, group = "AI Top 100")
 )
 
-ggplot(df_density, aes(x = score, fill = group)) +
+p_density <- ggplot(df_density, aes(x = score, fill = group)) +
   geom_density(alpha = 0.4) +
   scale_x_continuous(labels = scales::comma) +
   labs(
@@ -56,7 +59,10 @@ ggplot(df_density, aes(x = score, fill = group)) +
   ) +
   theme_minimal()
 
-ggplot(daily, aes(x = date, y = X1)) +
+ggsave("data/density_plot.png", p_density, width = 8, height = 5, dpi = 300)
+
+# X1 time series
+p_x1 <- ggplot(daily, aes(x = date, y = X1)) +
   geom_line(color = "steelblue", size = 1.2) +
   geom_point(color = "steelblue") +
   labs(
@@ -66,7 +72,10 @@ ggplot(daily, aes(x = date, y = X1)) +
   ) +
   theme_minimal()
 
-ggplot(daily, aes(x = date, y = X2)) +
+ggsave("data/X1_timeseries.png", p_x1, width = 8, height = 5, dpi = 300)
+
+# X2 time series
+p_x2 <- ggplot(daily, aes(x = date, y = X2)) +
   geom_line(color = "darkred", size = 1.2) +
   geom_point(color = "darkred") +
   labs(
@@ -76,3 +85,4 @@ ggplot(daily, aes(x = date, y = X2)) +
   ) +
   theme_minimal()
 
+ggsave("data/X2_timeseries.png", p_x2, width = 8, height = 5, dpi = 300)
