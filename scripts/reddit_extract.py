@@ -74,6 +74,7 @@ def title_matches(title):
 # ---------------------------------------
 
 def analyze_top100():
+    print("DEBUG: Running script version with URL =", url)
     # UPDATED: use api.reddit.com to avoid 403
     url = "https://api.reddit.com/r/all/top?limit=100&t=day"
     data = fetch_json(url)
