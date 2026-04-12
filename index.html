@@ -1,17 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>AI Panic Index</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 3rem auto; }
-    h1 { font-weight: 600; }
-    .note { color: #666; margin-top: 2rem; font-size: 0.9rem; }
-  </style>
-</head>
-<body>
-  <h1>Index</h1>
-  <p>Data collection not yet enabled. .</p>
-  <p class="note">This page will eventually show.</p>
-</body>
-</html>
+<div style="display:flex; gap:20px;">
+
+  <!-- Overall Top 100 -->
+  <div style="flex:1;">
+    <h2>Top 100 Posts (Overall)</h2>
+    <div id="overall-list" 
+         style="height:400px; overflow-y:scroll; border:1px solid #ccc; padding:10px;">
+      Loading…
+    </div>
+  </div>
+
+  <!-- AI Top 100 -->
+  <div style="flex:1;">
+    <h2>Top AI Posts</h2>
+    <div id="ai-list" 
+         style="height:400px; overflow-y:scroll; border:1px solid #ccc; padding:10px;">
+      Loading…
+    </div>
+  </div>
+
+</div>
+
+<script>
+async function loadRedditData() {
+  const response = await fetch("data/reddit.json");
+  const json = await response.json();
+
+  const overall = json.reddit.all_top100_posts;
+  const ai = json.reddit.ai_posts_top100;
+
+  const overallDiv = document.getElementById("overall-list");
+  const aiDiv = document.getElementById("ai-list");
+
+  overallDiv.innerHTML = overall
+    .map(p => `<div><strong>${p.score}</strong> — ${p.title}</div>`)
+    .join("");
+
+  aiDiv.innerHTML = ai
+    .map(p => `<div><strong>${p.score}</strong> — ${p.title}</div>`)
+    .join("");
+}
+
+loadRedditData();
+</script>
