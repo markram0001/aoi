@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-12",
+  "reddit": {
+    "total_points_top100": 482913,
+    "ai_points_top100": 42133,
+    "ai_points_all": 238912,
+    "notes": "RR",
+    "ai_posts_sample": [
+      {
+        "title": "AA",
+        "score": 12432,
+        "subreddit": "technology"
+      }
+    ]
+  }
+}
