@@ -31,40 +31,42 @@ dist_overall = r["all_scores_top100"]
 dist_ai = r["ai_scores_all"]
 
 # -----------------------------
-# Update column-based CSVs
+# Write column-based CSVs
 # -----------------------------
-def update_column_csv(path, metric_name, date_col, value):
-    if os.path.exists(path):
-        df = pd.read_csv(path)
-    else:
-        df = pd.DataFrame({"metric": [metric_name]})
 
-    if "metric" not in df.columns:
-        df.insert(0, "metric", metric_name)
+# ---- total_points.csv ----
+total_points_path = "data/total_points.csv"
 
-    if metric_name not in df["metric"].values:
-        df = pd.concat([
-            df,
-            pd.DataFrame({"metric": [metric_name]})
-        ])
+try:
+    total_df = pd.read_csv(total_points_path)
+except FileNotFoundError:
+    total_df = pd.DataFrame({"metric": ["top100_total"]})
 
-    df.loc[df["metric"] == metric_name, date_col] = value
-    df.to_csv(path, index=False)
+if "top100_total" not in total_df["metric"].values:
+    total_df = total_df._append(
+        {"metric": "top100_total"},
+        ignore_index=True
+    )
 
+total_df[date_col] = total_points
+total_df.to_csv(total_points_path, index=False)
 
-update_column_csv(
-    "data/total_points.csv",
-    "top100_total",
-    date_col,
-    total_points
-)
+# ---- ai_points.csv ----
+ai_points_path = "data/ai_points.csv"
 
-update_column_csv(
-    "data/ai_points.csv",
-    "top100_ai",
-    date_col,
-    ai_points
-)
+try:
+    ai_df = pd.read_csv(ai_points_path)
+except FileNotFoundError:
+    ai_df = pd.DataFrame({"metric": ["top100_ai"]})
+
+if "top100_ai" not in ai_df["metric"].values:
+    ai_df = ai_df._append(
+        {"metric": "top100_ai"},
+        ignore_index=True
+    )
+
+ai_df[date_col] = ai_points
+ai_df.to_csv(ai_points_path, index=False)
 
 # -----------------------------
 # Update daily.csv (row-based)
@@ -79,7 +81,10 @@ csv_path = "data/daily.csv"
 
 if os.path.exists(csv_path):
     daily = pd.read_csv(csv_path, parse_dates=["date"])
-    daily = pd.concat([daily, today_row]).drop_duplicates(subset=["date"])
+    daily = pd.concat([daily, today_row]).drop_duplicates(
+        subset=["date"],
+        keep="last"
+    )
 else:
     daily = today_row
 
