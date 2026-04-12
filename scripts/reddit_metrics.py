@@ -13,9 +13,8 @@ with open("data/reddit.json", "r", encoding="utf-8") as f:
 
 r = dat["reddit"]
 
-# Extract date (unchanged for plotting)
+# Extract date
 the_date = pd.to_datetime(dat["date"]).date()
-date_col = dat["date"]  # STRING for CSV column header
 
 # -----------------------------
 # Compute metrics
@@ -26,36 +25,12 @@ ai_points = r["ai_points_top100"]
 X1 = ai_points / total_points
 X2 = r["ai_count_top100"]
 
-# Score distributions (vectors)
+# Score distributions
 dist_overall = r["all_scores_top100"]
-dist_ai = r["ai_scores_all"]
+dist_ai = r["ai_scores_all"]   # <-- your requested change
 
 # -----------------------------
-# NEW: write vectors as column-based CSVs
-# -----------------------------
-
-# ---- total_points.csv (Top 100 overall scores) ----
-total_path = "data/total_points.csv"
-try:
-    total_df = pd.read_csv(total_path)
-except FileNotFoundError:
-    total_df = pd.DataFrame()
-
-total_df[date_col] = pd.Series(dist_overall)
-total_df.to_csv(total_path, index=False)
-
-# ---- ai_points.csv (AI scores) ----
-ai_path = "data/ai_points.csv"
-try:
-    ai_df = pd.read_csv(ai_path)
-except FileNotFoundError:
-    ai_df = pd.DataFrame()
-
-ai_df[date_col] = pd.Series(dist_ai)
-ai_df.to_csv(ai_path, index=False)
-
-# -----------------------------
-# Update daily.csv (unchanged)
+# Update daily.csv
 # -----------------------------
 today_row = pd.DataFrame([{
     "date": the_date,
