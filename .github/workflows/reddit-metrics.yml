@@ -5,6 +5,9 @@ on:
     - cron: "0 14 * * *"   # runs daily at 14:00 UTC (10am ET)
   workflow_dispatch:
 
+permissions:
+  contents: write
+  
 jobs:
   run-python:
     runs-on: ubuntu-latest
