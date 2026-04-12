@@ -24,7 +24,7 @@ jobs:
           pip install requests
 
       - name: Run Reddit extractor
-        run: python reddit_extract.py
+        run: scripts/reddit_extract.py
 
       - name: Commit updated JSON
         run: |
