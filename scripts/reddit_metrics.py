@@ -27,7 +27,7 @@ X2 = r["ai_count_top100"]
 
 # Score distributions
 dist_overall = r["all_scores_top100"]
-dist_ai = r["ai_scores_all"]   # <-- your requested change
+dist_ai = r["ai_scores_all"]   # <-- requested change
 
 # -----------------------------
 # Update daily.csv
@@ -45,6 +45,9 @@ if os.path.exists(csv_path):
     daily = pd.concat([daily, today_row]).drop_duplicates()
 else:
     daily = today_row
+
+# ✅ FIX: ensure matplotlib-compatible datetime
+daily["date"] = pd.to_datetime(daily["date"])
 
 daily.to_csv(csv_path, index=False)
 
