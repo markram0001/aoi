@@ -28,3 +28,13 @@ jobs:
 
       - name: Run GDELT script
         run: python scripts/gdelt.py
+
+      # ✅ NEW (this is the fix)
+      - name: Commit GDELT data
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add data/gdelt_raw/
+          git commit -m "Add GDELT GKG sample data" || echo "No changes to commit"
+          git push
+``
