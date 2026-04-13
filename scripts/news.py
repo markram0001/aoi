@@ -3,7 +3,6 @@ import requests
 import re
 import os
 from datetime import date
-from io import StringIO
 
 # -----------------------------
 # CONFIG
@@ -54,21 +53,26 @@ def title_matches(title):
 # Load latest GDELT GKG file
 # -----------------------------
 
-gdelt_url = "http://data.gdeltproject.org/gdeltv2/lastupdate.txt"
-
-resp = requests.get(gdelt_url, headers=HEADERS)
+lastupdate_url = "http://data.gdeltproject.org/gdeltv2/lastupdate.txt"
+resp = requests.get(lastupdate_url, headers=HEADERS)
 resp.raise_for_status()
 
-# ✅ CHANGED: use the FULL URL provided by lastupdate.txt
-gkg_url = resp.text.strip().split("\n")[0].split(" ")[2]
+# ✅ Select the GKG file explicitly
+gkg_url = None
+for line in resp.text.strip().split("\n"):
+    if ".gkg.csv.zip" in line.lower():
+        gkg_url = line.split(" ")[2]
+        break
 
-csv_resp = requests.get(gkg_url, headers=HEADERS)
-csv_resp.raise_for_status()
+if gkg_url is None:
+    raise RuntimeError("No GKG file found in lastupdate.txt")
 
+# ✅ Load the ZIP directly with pandas
 df = pd.read_csv(
-    StringIO(csv_resp.text),
+    gkg_url,
     sep="\t",
     header=None,
+    compression="zip",
     low_memory=False
 )
 
