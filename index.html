@@ -58,8 +58,9 @@ async function loadRedditData() {
   const json = await response.json();
 
   const overall = json.reddit.all_top100_posts;
-  const ai = json.reddit.ai_posts_top100;
+  const ai = json.reddit.ai_posts_all;
 
+  
   const overallDiv = document.getElementById("overall-list");
   const aiDiv = document.getElementById("ai-list");
 
