@@ -25,8 +25,13 @@ ai_count_top100 = r["ai_count_top100"]
 all_scores_top100 = r["all_scores_top100"]
 ai_scores_all = r["ai_scores_all"]
 
-# ✅ NEW: compute AI share percentage
+
 ai_share_pct = (ai_points / total_points) * 100
+
+
+# Compute number of AI posts whose scores are within Top 100 threshold
+top100_cutoff = min(all_scores_top100)
+ai_within_top100 = sum(score >= top100_cutoff for score in ai_scores_all)
 
 # -----------------------------
 # Append scalar datasets (row-wise, no dedup)
@@ -60,7 +65,6 @@ def append_vector_dataset(path, date, values):
 # Apply updates
 # -----------------------------
 
-# Scalars (unchanged structure)
 append_scalar_dataset(
     "data/total_points_top100.csv",
     {"date": date_str, "value": total_points}
@@ -71,17 +75,18 @@ append_scalar_dataset(
     {"date": date_str, "value": ai_points}
 )
 
-# ✅ CHANGED: ai_count + ai_share_pct in same CSV
+# Save both original AI count AND "within Top 100 threshold" count
 append_scalar_dataset(
     "data/ai_count_top100.csv",
     {
         "date": date_str,
         "ai_count_top100": ai_count_top100,
+        "ai_within_top100": ai_within_top100,
         "ai_share_pct": ai_share_pct
     }
 )
 
-# Vectors
+# Vectors (unchanged)
 append_vector_dataset(
     "data/all_scores_top100.csv",
     date_str,
@@ -94,11 +99,10 @@ append_vector_dataset(
     ai_scores_all
 )
 
+# -----------------------------
+# Density plot (UNCHANGED)
+# -----------------------------
 sns.set_theme(style="whitegrid")
-
-# existing variables already in memory:
-# all_scores_top100
-# ai_scores_all
 
 all_vals = np.array(all_scores_top100)
 ai_vals = np.array(ai_scores_all)
@@ -115,29 +119,31 @@ plt.tight_layout()
 plt.savefig("data/density_plot.png", dpi=300)
 plt.close()
 
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# load CSV produced by earlier script
+# -----------------------------
+# Time series plots
+# -----------------------------
 df = pd.read_csv("data/ai_count_top100.csv")
-
-# remove duplicate dates (keep last)
 df = df.drop_duplicates(subset=["date"], keep="last")
 df["date"] = pd.to_datetime(df["date"])
 
-# --- AI count time series ---
+# X1_timeseries now has TWO lines
 plt.figure(figsize=(8, 5))
-plt.plot(df["date"], df["ai_count_top100"], marker="o", color="darkred")
-plt.title("AI Posts in Reddit Top 100")
+plt.plot(df["date"], df["ai_count_top100"],
+         marker="o", label="AI posts in Top 100", color="darkred")
+plt.plot(df["date"], df["ai_within_top100"],
+         marker="o", label="AI posts with Top-100-level upvotes", color="steelblue")
+
+plt.title("AI Presence in Reddit Top 100")
 plt.xlabel("Date")
 plt.ylabel("Count")
+plt.legend()
 plt.tight_layout()
 plt.savefig("data/X1_timeseries.png", dpi=300)
 plt.close()
 
-# --- AI share % time series ---
+# X2 (unchanged)
 plt.figure(figsize=(8, 5))
-plt.plot(df["date"], df["ai_share_pct"], marker="o", color="steelblue")
+plt.plot(df["date"], df["ai_share_pct"], marker="o", color="purple")
 plt.title("AI Share of Top 100 Upvotes (%)")
 plt.xlabel("Date")
 plt.ylabel("Percent")
