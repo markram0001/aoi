@@ -1,69 +1,49 @@
 import requests
 import os
-from datetime import date
+import pandas as pd
+from zipfile import ZipFile
+from io import BytesIO
 
-# -----------------------------
-# CONFIG
-# -----------------------------
+BASE_URL = "http://data.gdeltproject.org/gdeltv2"
+DATA_DIR = "data/gdelt_raw"
+NROWS = 100
 
-url = "https://api.gdeltproject.org/api/v2/doc/doc"
+os.makedirs(DATA_DIR, exist_ok=True)
 
-params = {
-    "mode": "artlist",
-    "maxrecords": 50,
-    "sourcelang": "eng",
-    "sort": "DateDesc",
-    "format": "json"
-}
+# Get latest GKG file
+resp = requests.get(f"{BASE_URL}/lastupdate.txt", timeout=30)
+resp.raise_for_status()
 
-today = date.today().isoformat()
+gkg_url = None
+for line in resp.text.strip().split("\n"):
+    if ".gkg.csv.zip" in line.lower():
+        gkg_url = line.split(" ")[2]
+        break
 
-# Ensure data directory exists
-os.makedirs("data", exist_ok=True)
+if gkg_url is None:
+    raise RuntimeError("No GKG file found")
 
-# -----------------------------
-# Fetch data
-# -----------------------------
+zip_resp = requests.get(gkg_url, timeout=60)
+zip_resp.raise_for_status()
 
-res = requests.get(url, params=params)
-res.raise_for_status()
+zip_path = os.path.join(DATA_DIR, os.path.basename(gkg_url))
+with open(zip_path, "wb") as f:
+    f.write(zip_resp.content)
 
-if not res.text.strip():
-    raise RuntimeError("GDELT returned empty response")
+# Extract first 100 rows
+with ZipFile(BytesIO(zip_resp.content)) as z:
+    csv_name = z.namelist()[0]
+    with z.open(csv_name) as f:
+        df = pd.read_csv(
+            f,
+            sep="\t",
+            header=None,
+            nrows=NROWS,
+            low_memory=False
+        )
 
-try:
-    data = res.json()
-except ValueError:
-    raise RuntimeError(f"Non-JSON response from GDELT:\n{res.text[:500]}")
+out_csv = zip_path.replace(".zip", f".first_{NROWS}.csv")
+df.to_csv(out_csv, index=False)
 
-articles = data.get("articles", [])
-total_hits = len(articles)
-
-# -----------------------------
-# Save summary CSV
-# -----------------------------
-
-summary_path = "data/gdelt_latest_summary.csv"
-summary_row = f"{today},{total_hits}\n"
-
-if not os.path.exists(summary_path):
-    with open(summary_path, "w", encoding="utf-8") as f:
-        f.write("date,total_articles\n")
-
-with open(summary_path, "a", encoding="utf-8") as f:
-    f.write(summary_row)
-
-# -----------------------------
-# Save detailed headlines
-# -----------------------------
-
-details_path = f"data/gdelt_latest_articles_{today}.txt"
-
-with open(details_path, "w", encoding="utf-8") as f:
-    f.write(f"Date: {today}\n")
-    f.write(f"Number of articles: {total_hits}\n\n")
-
-    for a in articles:
-        f.write(f"{a.get('seendate')} - {a.get('title')}\n")
-        f.write(f"{a.get('sourceCommonName')}\n")
-        f.write(f"{a.get('url')}\n\n")
+print("Saved sample:", out_csv)
+print("Shape:", df.shape)
