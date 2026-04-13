@@ -11,8 +11,6 @@ from io import StringIO
 
 KEYWORD_PATTERNS = [
     r"\bai\b",
-    r"\bartificial\b",
-    r"\bintelligence\b",
     r"\bartificial intelligence\b",
     r"\bagi\b",
     r"\bgenai\b",
@@ -56,19 +54,13 @@ def title_matches(title):
 # Load latest GDELT GKG file
 # -----------------------------
 
-# ✅ CHANGED: use HTTP instead of HTTPS
-gdelt_url = (
-    "http://data.gdeltproject.org/gdeltv2/"
-    "lastupdate.txt"
-)
+gdelt_url = "http://data.gdeltproject.org/gdeltv2/lastupdate.txt"
 
 resp = requests.get(gdelt_url, headers=HEADERS)
 resp.raise_for_status()
 
-latest_file = resp.text.strip().split("\n")[0].split(" ")[2]
-
-# ✅ CHANGED: use HTTP here as well
-gkg_url = f"http://data.gdeltproject.org/gdeltv2/{latest_file}"
+# ✅ CHANGED: use the FULL URL provided by lastupdate.txt
+gkg_url = resp.text.strip().split("\n")[0].split(" ")[2]
 
 csv_resp = requests.get(gkg_url, headers=HEADERS)
 csv_resp.raise_for_status()
