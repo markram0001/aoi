@@ -17,8 +17,6 @@ r = dat["reddit"]
 # -----------------------------
 total_points = r["total_points_top100"]
 ai_points = r["ai_points_top100"]
-
-# ✅ NEW: extract AI count in Top 100
 ai_count_top100 = r["ai_count_top100"]
 
 all_scores_top100 = r["all_scores_top100"]
@@ -49,10 +47,10 @@ def append_vector_dataset(path, date, values):
 
     if os.path.exists(path):
         df = pd.read_csv(path)
+        df.insert(len(df.columns), date, series, allow_duplicates=True)
     else:
-        df = pd.DataFrame()
+        df = pd.DataFrame({date: series})
 
-    df.insert(len(df.columns), date, series)  # keeps duplicate columns
     df.to_csv(path, index=False)
 
 # -----------------------------
@@ -72,7 +70,6 @@ append_scalar_dataset(
     ai_points
 )
 
-# ✅ NEW: AI count in Top 100
 append_scalar_dataset(
     "data/ai_count_top100.csv",
     date_str,
