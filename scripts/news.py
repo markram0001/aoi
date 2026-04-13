@@ -56,9 +56,9 @@ def title_matches(title):
 # Load latest GDELT GKG file
 # -----------------------------
 
-# Most recent English GKG records (rolling)
+# ✅ CHANGED: use HTTP instead of HTTPS
 gdelt_url = (
-    "https://data.gdeltproject.org/gdeltv2/"
+    "http://data.gdeltproject.org/gdeltv2/"
     "lastupdate.txt"
 )
 
@@ -67,7 +67,8 @@ resp.raise_for_status()
 
 latest_file = resp.text.strip().split("\n")[0].split(" ")[2]
 
-gkg_url = f"https://data.gdeltproject.org/gdeltv2/{latest_file}"
+# ✅ CHANGED: use HTTP here as well
+gkg_url = f"http://data.gdeltproject.org/gdeltv2/{latest_file}"
 
 csv_resp = requests.get(gkg_url, headers=HEADERS)
 csv_resp.raise_for_status()
@@ -79,17 +80,7 @@ df = pd.read_csv(
     low_memory=False
 )
 
-# Column 4 = Document URL
-# Column 6 = Country
-# Column 9 = Themes
-# Column 10 = Locations
-# Column 15 = Persons
-# Column 16 = Organizations
-# Column 23 = V2Tone
-# Column 26 = V2Locations
-# Column 28 = Document identifier (URL/title proxy)
-
-# Best available headline proxy is column 28
+# Column 28 = best available headline proxy
 titles = df[28].dropna().astype(str)
 
 # -----------------------------
@@ -106,6 +97,9 @@ ai_headlines = [
 ai_count = len(ai_headlines)
 ai_share_pct = (ai_count / total_headlines) * 100 if total_headlines > 0 else 0
 
+# -----------------------------
+# Save summary CSV
+# -----------------------------
 
 summary_path = "data/news_ai_headline_summary.csv"
 
