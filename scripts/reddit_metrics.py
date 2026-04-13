@@ -22,14 +22,14 @@ ai_count_top100 = r["ai_count_top100"]
 all_scores_top100 = r["all_scores_top100"]
 ai_scores_all = r["ai_scores_all"]
 
+# ✅ NEW: compute AI share percentage
+ai_share_pct = (ai_points / total_points) * 100
+
 # -----------------------------
 # Append scalar datasets (row-wise, no dedup)
 # -----------------------------
-def append_scalar_dataset(path, date, value):
-    new_row = pd.DataFrame([{
-        "date": date,
-        "value": value
-    }])
+def append_scalar_dataset(path, row_dict):
+    new_row = pd.DataFrame([row_dict])
 
     if os.path.exists(path):
         df = pd.read_csv(path)
@@ -57,23 +57,25 @@ def append_vector_dataset(path, date, values):
 # Apply updates
 # -----------------------------
 
-# Scalars
+# Scalars (unchanged structure)
 append_scalar_dataset(
     "data/total_points_top100.csv",
-    date_str,
-    total_points
+    {"date": date_str, "value": total_points}
 )
 
 append_scalar_dataset(
     "data/ai_points_top100.csv",
-    date_str,
-    ai_points
+    {"date": date_str, "value": ai_points}
 )
 
+# ✅ CHANGED: ai_count + ai_share_pct in same CSV
 append_scalar_dataset(
     "data/ai_count_top100.csv",
-    date_str,
-    ai_count_top100
+    {
+        "date": date_str,
+        "ai_count_top100": ai_count_top100,
+        "ai_share_pct": ai_share_pct
+    }
 )
 
 # Vectors
