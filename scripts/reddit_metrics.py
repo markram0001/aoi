@@ -12,41 +12,38 @@ date_str = dat["date"]
 r = dat["reddit"]
 
 # -----------------------------
-# Extract scalars
+# Extract present-day variables
+# (DO NOT CHANGE THESE)
 # -----------------------------
 total_points = r["total_points_top100"]
 ai_points = r["ai_points_top100"]
 
-# -----------------------------
-# Extract vectors
-# -----------------------------
 all_scores_top100 = r["all_scores_top100"]
 ai_scores_all = r["ai_scores_all"]
 
 # -----------------------------
-# Helper: append scalar as rows
+# Update scalar datasets (row-wise)
 # -----------------------------
-def update_scalar_csv(path, date, value):
-    row = pd.DataFrame([{
+def update_scalar_dataset(path, date, value):
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+    else:
+        df = pd.DataFrame(columns=["date", "value"])
+
+    new_row = pd.DataFrame([{
         "date": date,
         "value": value
     }])
 
-    if os.path.exists(path):
-        df = pd.read_csv(path)
-        df = pd.concat([df, row]).drop_duplicates(
-            subset=["date"],
-            keep="last"
-        )
-    else:
-        df = row
+    df = pd.concat([df, new_row], ignore_index=True)
+    df = df.drop_duplicates(subset=["date"], keep="last")
 
     df.to_csv(path, index=False)
 
 # -----------------------------
-# Helper: append vector as column
+# Update vector datasets (column-wise)
 # -----------------------------
-def update_vector_csv(path, date, values):
+def update_vector_dataset(path, date, values):
     series = pd.Series(values)
 
     if os.path.exists(path):
@@ -58,33 +55,33 @@ def update_vector_csv(path, date, values):
     df.to_csv(path, index=False)
 
 # -----------------------------
-# Write scalar CSVs
+# Apply updates
 # -----------------------------
-update_scalar_csv(
+
+# Scalars
+update_scalar_dataset(
     "data/total_points_top100.csv",
     date_str,
     total_points
 )
 
-update_scalar_csv(
+update_scalar_dataset(
     "data/ai_points_top100.csv",
     date_str,
     ai_points
 )
 
-# -----------------------------
-# Write vector CSVs
-# -----------------------------
-update_vector_csv(
+# Vectors
+update_vector_dataset(
     "data/all_scores_top100.csv",
     date_str,
     all_scores_top100
 )
 
-update_vector_csv(
+update_vector_dataset(
     "data/ai_scores_all.csv",
     date_str,
     ai_scores_all
 )
 
-print("✅ CSV extraction complete")
+print("✅ All datasets updated successfully")
