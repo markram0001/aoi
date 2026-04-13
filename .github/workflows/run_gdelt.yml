@@ -2,7 +2,6 @@ name: Run GDELT News Extraction
 
 on:
   schedule:
-    # adjust as you like; this example runs every 6 hours
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
@@ -27,9 +26,9 @@ jobs:
           pip install requests pandas
 
       - name: Run GDELT script
-        run: python scripts/gdelt.py
+        run: |
+          python scripts/gdelt.py
 
-      # ✅ NEW (this is the fix)
       - name: Commit GDELT data
         run: |
           git config --global user.name "github-actions"
@@ -37,4 +36,3 @@ jobs:
           git add data/gdelt_raw/
           git commit -m "Add GDELT GKG sample data" || echo "No changes to commit"
           git push
-``
