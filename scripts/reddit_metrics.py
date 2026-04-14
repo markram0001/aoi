@@ -143,12 +143,30 @@ plt.tight_layout()
 plt.savefig("data/X1_timeseries.png", dpi=300)
 plt.close()
 
-# X2 (unchanged)
+# X2 (updated with two lines)
 plt.figure(figsize=(8, 5))
-plt.plot(df["date"], df["ai_share_pct"], marker="o", color="purple")
+
+plt.plot(
+    df["date"],
+    df["ai_share_pct"],
+    marker="o",
+    color="purple",
+    label="AI Share (Observed in Top 100)"
+)
+
+plt.plot(
+    df["date"],
+    df["ai_share_pct_top"],
+    marker="o",
+    linestyle="--",
+    color="darkgreen",
+    label="AI Share (Observed in Top AI Search)"
+)
+
 plt.title("AI Share of Top 100 Upvotes (%)")
 plt.xlabel("Date")
 plt.ylabel("Percent")
+plt.legend()
 plt.tight_layout()
 plt.savefig("data/X2_timeseries.png", dpi=300)
 plt.close()
