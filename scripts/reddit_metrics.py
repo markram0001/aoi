@@ -27,6 +27,7 @@ ai_scores_all = r["ai_scores_all"]
 
 
 ai_share_pct = (ai_points / total_points) * 100
+ai_share_pct_top = (sum(ai_scores_all) / total_points) * 100
 
 
 # Compute number of AI posts whose scores are within Top 100 threshold
@@ -82,7 +83,8 @@ append_scalar_dataset(
         "date": date_str,
         "ai_count_top100": ai_count_top100,
         "ai_within_top100": ai_within_top100,
-        "ai_share_pct": ai_share_pct
+        "ai_share_pct": ai_share_pct,
+        "ai_share_pct_top": ai_share_pct_top
     }
 )
 
