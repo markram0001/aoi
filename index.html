@@ -60,19 +60,29 @@ async function loadRedditData() {
   const overall = json.reddit.all_top100_posts;
   const ai = json.reddit.ai_posts_all;
 
-  
+  // ⭐ ADDED: load ai_posts_top100
+  const aiTop100 = json.reddit.ai_posts_top100 || [];
+
+  // ⭐ ADDED: build a Set of titles for fast matching
+  const aiTop100Set = new Set(aiTop100.map(p => p.title));
+
   const overallDiv = document.getElementById("overall-list");
   const aiDiv = document.getElementById("ai-list");
 
+  // ⭐ MODIFIED: highlight matches in red
   overallDiv.innerHTML = overall
-    .map(p => `
-      <div style="display:flex; margin-bottom:4px;">
-        <div style="width:80px; font-weight:bold;">${p.score}</div>
-        <div>${p.title}</div>
-      </div>
-    `)
+    .map(p => {
+      const isAI = aiTop100Set.has(p.title);   // ⭐ ADDED
+      return `
+        <div style="display:flex; margin-bottom:4px; color:${isAI ? 'red' : 'inherit'};">
+          <div style="width:80px; font-weight:bold;">${p.score}</div>
+          <div>${p.title}</div>
+        </div>
+      `;
+    })
     .join("");
 
+  // (unchanged)
   aiDiv.innerHTML = ai
     .map(p => `
       <div style="display:flex; margin-bottom:4px;">
