@@ -1,561 +1,572 @@
 {
-  "date": "2026-05-14",
+  "date": "2026-05-15",
   "reddit": {
-    "total_points_top100": 2450513,
-    "ai_points_top100": 0,
-    "ai_count_top100": 0,
-    "ai_posts_top100": [],
-    "ai_scores_top100": [],
+    "total_points_top100": 2525594,
+    "ai_points_top100": 33960,
+    "ai_count_top100": 1,
+    "ai_posts_top100": [
+      {
+        "title": "Princeton scraps honor code and will supervise exams for first time in 133 years because of AI",
+        "score": 33960
+      }
+    ],
+    "ai_scores_top100": [
+      33960
+    ],
     "all_top100_posts": [
       {
-        "title": "I wore the same shirt as my Statistics professor the first day of class",
-        "score": 78421
+        "title": "meirl",
+        "score": 49495
       },
       {
-        "title": "Some parents need this.",
-        "score": 61143
+        "title": "Circassian folk dance",
+        "score": 49440
       },
       {
-        "title": "Sane Clown Posse",
-        "score": 59450
+        "title": "Kittens in storm drain successfully rescued. Thanks, everyone!",
+        "score": 49008
       },
       {
-        "title": "Walmart shipped 165 pool noodles in 165 separate boxes",
-        "score": 54385
+        "title": "The New American Gothic, Criselda Vasquez, Oil on Canvas, 2017",
+        "score": 48082
       },
       {
-        "title": "Meirl",
-        "score": 49174
+        "title": "Next time you wash your hands think.. that's how these things are made.",
+        "score": 47909
       },
       {
-        "title": "So incredibly wholesome",
-        "score": 48107
+        "title": "Seriously it's that simple:",
+        "score": 47304
       },
       {
-        "title": "how?\ud83d\ude02",
-        "score": 46655
+        "title": "The goat",
+        "score": 47110
       },
       {
-        "title": "More ports",
-        "score": 44095
+        "title": "This is my cheetah room",
+        "score": 46540
       },
       {
-        "title": "This volcano in Indonesia erupts icy violet colored lava at night. It's real, it's on Earth. (Kawah Ijen, Indonesia).",
-        "score": 39114
+        "title": "Family Van Toyota Sienna saves the day",
+        "score": 45777
       },
       {
-        "title": "Literally.",
-        "score": 35967
+        "title": "It was always just that simple",
+        "score": 45038
       },
       {
-        "title": "an IQ too high?",
-        "score": 35808
-      },
-      {
-        "title": "'It's like we don't exist': Nearly 50,000 Lake Tahoe residents face power loss as utility redirects lines to data centers",
-        "score": 34839
+        "title": "Test Results [OC]",
+        "score": 43639
       },
       {
         "title": "meirl",
-        "score": 34244
+        "score": 39941
       },
       {
-        "title": "Perfectly Reasonable Reaction",
-        "score": 33881
+        "title": "Construction workers refuse to use the stairs and instead climbed the hill to the point the grass died",
+        "score": 37960
       },
       {
-        "title": "The Chronicles of Georgia in Tbilisi looks straight out of a fantasy world",
-        "score": 33881
+        "title": "This seems like a good neighborhood!",
+        "score": 37825
       },
       {
-        "title": "The \"Peace President\" Donald Trump dozes off at Board of Peace meeting",
-        "score": 33243
-      },
-      {
-        "title": "Epstein abused me while under house arrest, survivor tells US lawmakers",
-        "score": 33145
-      },
-      {
-        "title": "Kash Patel doesn\u2019t know if lying to Congress is a crime",
-        "score": 32978
-      },
-      {
-        "title": "[OC] This is why we don't call the ambulance in the U.S.",
-        "score": 32477
-      },
-      {
-        "title": "A solution to hockey players",
-        "score": 31052
-      },
-      {
-        "title": "meirl",
-        "score": 30675
-      },
-      {
-        "title": "Grandma Catches the Wrong \u201cGrandson\u201d at Internet Caf\u00e9 and Ends Up Adopting a Stranger \ud83d\ude05",
-        "score": 29961
-      },
-      {
-        "title": "Turns out most moats were just ditches",
-        "score": 29435
-      },
-      {
-        "title": "Billionaire Kevin O'leary says 2 people fighting data centers in Utah are Chinese agents. Turns out its just 2 local girls in Utah, they make a hilarious video calling him the fuck out",
-        "score": 28532
-      },
-      {
-        "title": "An amazing new technology...",
-        "score": 27863
-      },
-      {
-        "title": "Someone tossed this fella out of their car a couple roads down from my place. He ran right up to me. This is Noodle!",
-        "score": 27743
-      },
-      {
-        "title": "What do these lines mean",
-        "score": 26878
-      },
-      {
-        "title": "New York Mayor Mamdani Applauded for Closing $12 Billion Budget Deficit Without Austerity Measures",
-        "score": 26302
-      },
-      {
-        "title": "BBC announces David Attenborough is returning to narrate Blue Planet III",
-        "score": 26297
-      },
-      {
-        "title": "A family of wild Pallas's cats filmed in the grasslands of Qinghai Province, China",
-        "score": 26264
-      },
-      {
-        "title": "\"SHE WAS GIVING YOU THE LOOK\"",
-        "score": 25389
-      },
-      {
-        "title": "She looks so relieved!!",
-        "score": 25031
-      },
-      {
-        "title": "techCompaniesCuttingDevsForAI",
-        "score": 24754
-      },
-      {
-        "title": "Don't ask a question you don't want the answer to",
-        "score": 24687
-      },
-      {
-        "title": "A judge told Musk he was not excused from trial. He went to China with Trump anyway.",
-        "score": 24314
-      },
-      {
-        "title": "TIL Ostrich farms routinely have difficulties getting male ostriches to breed, because they often find their human caretakers more attractive than female ostriches.",
-        "score": 24130
-      },
-      {
-        "title": "[OC] Trump's Star at the Walk of Fame in Hollywood",
-        "score": 23876
-      },
-      {
-        "title": "John Fetterman Single-Handedly Tanks Effort to Rein Trump in on Iran",
-        "score": 23616
-      },
-      {
-        "title": "Due to recent news",
-        "score": 23175
-      },
-      {
-        "title": "Tomato tomato",
-        "score": 22826
-      },
-      {
-        "title": "The \"Green Stone\" of Hattusa: A 2,200lb block of nephrite that sits alone in the ruins of the 3,000-year-old Hittite capital. Archeologists still have no idea why it\u2019s there.",
-        "score": 22473
-      },
-      {
-        "title": "This is how shuttlecocks are quality tested in the factory.",
-        "score": 22443
+        "title": "Illustrated this after seeing Trump's new statue and being reminded of an old poem about kings (OC)",
+        "score": 36675
       },
       {
         "title": "me_irl",
-        "score": 22302
+        "score": 35896
       },
       {
-        "title": "bro made it to 20 years old and still only has half the orange brain cell left",
-        "score": 21998
+        "title": "College and Pro sports, are you listening?!?",
+        "score": 34377
       },
       {
-        "title": "Sure is.......",
-        "score": 21635
+        "title": "This is hilarious",
+        "score": 34111
       },
       {
-        "title": "How does my cat smell so good?",
-        "score": 21341
+        "title": "Princeton scraps honor code and will supervise exams for first time in 133 years because of AI",
+        "score": 33960
       },
       {
-        "title": "The impossibly intricate symmetry of this mosque ceiling.",
-        "score": 21322
+        "title": "Adopted this white cat 3 days ago and now they're already super close to each other.",
+        "score": 33860
+      },
+      {
+        "title": "US border patrol chief resigns after claims of sex with prostitutes abroad",
+        "score": 33130
+      },
+      {
+        "title": "me_irl",
+        "score": 32236
+      },
+      {
+        "title": "Barbara Palvin and Dylan Sprouse are expecting their first child together",
+        "score": 32135
+      },
+      {
+        "title": "Bird of prey with precision",
+        "score": 32008
+      },
+      {
+        "title": "I had the same result",
+        "score": 30771
+      },
+      {
+        "title": "Petah help",
+        "score": 30480
+      },
+      {
+        "title": "Final interview",
+        "score": 30004
+      },
+      {
+        "title": "And the Oscar *does not* go to",
+        "score": 28105
+      },
+      {
+        "title": "Emails show FBI Director Kash Patel\u2019s Hawaii trip included \u2018VIP snorkel\u2019 at a Pearl Harbor memorial",
+        "score": 27857
+      },
+      {
+        "title": "Hidden deep in a Norwegian forest is a museum that looks like it's from the year 2077",
+        "score": 27726
+      },
+      {
+        "title": "I just sold all of this. Cancer sucks!",
+        "score": 27484
+      },
+      {
+        "title": "Global-scale fully weaponized autistic pedantry.",
+        "score": 27355
+      },
+      {
+        "title": "Differences in the spot pattern of the Cheetah, Leopard, and Jaguar",
+        "score": 27117
+      },
+      {
+        "title": "ICE\u2019s Unfair Reputation",
+        "score": 27054
+      },
+      {
+        "title": "Freeze! Drop the mifepristone!",
+        "score": 26440
+      },
+      {
+        "title": "Rachel Entrekin, 34, beat everyone (man and woman) in the Cocoona 250 mile in Flagstaff, Arizona. She set a course record of 56 hours, 9 minutes, and 48 seconds",
+        "score": 26265
+      },
+      {
+        "title": "Husband and wife talking to this police officer through the ring camera at the same time",
+        "score": 26231
+      },
+      {
+        "title": "The congressman should also stick to his own state.",
+        "score": 26079
+      },
+      {
+        "title": "No devices has replaced the no smoking sign on my flight",
+        "score": 25944
+      },
+      {
+        "title": "This is beautiful!. If rainbow was a person\ud83c\udf08...",
+        "score": 25876
+      },
+      {
+        "title": "We got another one, boys",
+        "score": 24563
+      },
+      {
+        "title": "Maybe all the right girls are already taken.",
+        "score": 23952
+      },
+      {
+        "title": "They don't care about us \ud83e\udd40\ud83e\udd40",
+        "score": 23814
+      },
+      {
+        "title": "This is the most beautiful bird I have ever seen",
+        "score": 23754
+      },
+      {
+        "title": "He would have the whole island on tape",
+        "score": 23487
+      },
+      {
+        "title": "Phobe pt. 2/8 - Tiff\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f&amp; Eve [OC]",
+        "score": 23469
+      },
+      {
+        "title": "Feeling were hurt",
+        "score": 23018
+      },
+      {
+        "title": "Rachel Scott, I\u2019m with Her!!!",
+        "score": 23000
+      },
+      {
+        "title": "TIL that infants who live with dogs at three months of age are 90% less likely to develop a food allergy.",
+        "score": 22930
+      },
+      {
+        "title": "\u201cThe best-preserved warship in the world!\u201d",
+        "score": 22706
+      },
+      {
+        "title": "88-year-old walks at Georgia Tech graduation, after missing original ceremonies 66 years ago, due to military service",
+        "score": 22502
+      },
+      {
+        "title": "He said he was a trump supporter and I walked out on the date",
+        "score": 21978
+      },
+      {
+        "title": "Japan when another country tries to remind them about comfort women",
+        "score": 21747
+      },
+      {
+        "title": "Found kitten in wall - name suggestions pls",
+        "score": 21161
+      },
+      {
+        "title": "Suspended his license immediately",
+        "score": 21101
+      },
+      {
+        "title": "lol.......",
+        "score": 21093
+      },
+      {
+        "title": "They're literally robots",
+        "score": 21051
+      },
+      {
+        "title": "me_irl",
+        "score": 20388
+      },
+      {
+        "title": "Republicans vote to dilute gas as prices rise above $4.50",
+        "score": 20317
+      },
+      {
+        "title": "plague INC type of shi",
+        "score": 20225
+      },
+      {
+        "title": "This has to be an all-timer as far as insults go.",
+        "score": 19935
+      },
+      {
+        "title": "Tying A Proper Fly",
+        "score": 19925
+      },
+      {
+        "title": "of a Australonuphis, commonly called Australian beach worms",
+        "score": 19716
+      },
+      {
+        "title": "Meet the new Achilles.",
+        "score": 19716
+      },
+      {
+        "title": "This is incredibly sweet.",
+        "score": 18886
+      },
+      {
+        "title": "Bird and Dee in their forever home! Lots of cuddle puddles.",
+        "score": 18436
+      },
+      {
+        "title": "people saying white people be like but its actually what white people be like",
+        "score": 18395
+      },
+      {
+        "title": "tf you mean the two fingers are literal?",
+        "score": 18088
+      },
+      {
+        "title": "Blursed landlord",
+        "score": 17950
+      },
+      {
+        "title": "He completely melted during grooming",
+        "score": 17808
+      },
+      {
+        "title": "Israel says it will sue New York Times over article on sexual abuse of Palestinian prisoners",
+        "score": 17738
+      },
+      {
+        "title": "(18) to (19) I have managed to crawl out of a very dark place",
+        "score": 17564
+      },
+      {
+        "title": "Definitely the highest",
+        "score": 17360
+      },
+      {
+        "title": "I made a Caterpie",
+        "score": 17329
+      },
+      {
+        "title": "Absolute unit",
+        "score": 17158
+      },
+      {
+        "title": "Unpaid work is work",
+        "score": 17127
+      },
+      {
+        "title": "TIL that China consumes 46% of cigarettes in the entire world at a rate of 2.4 trillion a year.",
+        "score": 17035
+      },
+      {
+        "title": "\"In Japan, Heart Surgeon Number 1\"",
+        "score": 16849
+      },
+      {
+        "title": "Intense sparks erupt inside indian train squat toilet due to breaks",
+        "score": 16531
+      },
+      {
+        "title": "Power Nap",
+        "score": 16281
+      },
+      {
+        "title": "People are scared of socialism, but Social Democracy is an option and it's not so scary.",
+        "score": 15965
+      },
+      {
+        "title": "I can steal your man if I want to \ud83d\ude3c @hisserina",
+        "score": 15835
+      },
+      {
+        "title": "Pieces of media that invented new slang terms",
+        "score": 15823
+      },
+      {
+        "title": "I guess investors aren't smart people",
+        "score": 15816
       },
       {
         "title": "Meirl",
-        "score": 21235
+        "score": 15751
       },
       {
-        "title": "She has an eagle eye",
-        "score": 21138
+        "title": "The percentage of US high school seniors who have ever consumed alcohol has fallen off a cliff over the past 50 years",
+        "score": 15614
       },
       {
-        "title": "From a homeless alcoholic to a college graduate in a bit over 4 years.",
-        "score": 20601
+        "title": "This device could predict incoming phone calls (2000s)",
+        "score": 15541
       },
       {
-        "title": "Nairobi, Kenya. What a view!",
-        "score": 20427
+        "title": "A man is somehow managing to do the moonwalk while riding a bicycle at the same time",
+        "score": 15523
       },
       {
-        "title": "This seemed funnier when I thought about it",
-        "score": 20399
+        "title": "Drake's a nice guy for letting Kendrick live rent free in his head.",
+        "score": 15434
       },
       {
-        "title": "What's your thoughts",
-        "score": 20295
+        "title": "This McDonalds, across from a high school, closes it's restrooms at lunch. Photo taken at 2pm.",
+        "score": 15409
       },
       {
-        "title": "Power to the people",
-        "score": 20218
+        "title": "Since the 2010s, American conservatives increasingly experience worse health outcomes and higher mortality than liberals. Declining trust in medical professionals appears to be the mechanism, with lower willingness to seek care, follow clinical advice and believe in medication effectiveness.",
+        "score": 15405
       },
       {
-        "title": "The monkey is innocent",
-        "score": 20143
+        "title": "Literacy = zero",
+        "score": 15289
       },
       {
-        "title": "My $1400 LG OLED TV is displaying ads after latest update",
-        "score": 20108
+        "title": "People before things",
+        "score": 15125
       },
       {
-        "title": "Her favourite place...my backpack",
-        "score": 19573
+        "title": "The pride flag is ugly.",
+        "score": 15087
       },
       {
-        "title": "16 tough months!",
-        "score": 19570
+        "title": "Someone with kid asked a question to people without kids",
+        "score": 14954
       },
       {
-        "title": "I run an open shop night at our local technical highschool, and tonight we were cleaning out one of the old supply closets. Found these hand-drawn posters from some previous shop teacher and I thought this group would enjoy.",
-        "score": 19464
+        "title": "This slo-mo video of a wave breaking",
+        "score": 14952
       },
       {
-        "title": "For those that need the Lesson",
-        "score": 19123
+        "title": "Rare UK W",
+        "score": 14926
       },
       {
-        "title": "Vance announces suspension of $1.3 billion in Medicaid payments to California",
-        "score": 18911
+        "title": "Ghosts of past, present, and future",
+        "score": 14694
       },
       {
-        "title": "Throwback to when Sofia Vergara gave us the most iconic self introduction ever lol",
-        "score": 18900
+        "title": "TIL that the name \"Khaleesi\" has been in the top 1,000 list of popular names used for newborns since 2014. Though the popularity has decreased since \"Game of Thrones\" ended, there are about 120 girls names Khaleesi each year",
+        "score": 14110
       },
       {
-        "title": "Redpill content is grooming for the military. I think she has a point",
-        "score": 18870
-      },
-      {
-        "title": "The Supreme Court and the Confederate states again",
-        "score": 18857
-      },
-      {
-        "title": "She's going places",
-        "score": 18516
-      },
-      {
-        "title": "The last breath of the confederacy will be buried by this generation",
-        "score": 18376
-      },
-      {
-        "title": "Two of the best, both in their acting and in their morals",
-        "score": 18359
-      },
-      {
-        "title": "A really badass jacket",
-        "score": 18296
-      },
-      {
-        "title": "Meet Stanislav Petrov: The officer who defied orders and stopped WWIII during a false alarm",
-        "score": 18282
-      },
-      {
-        "title": "To use normal vocabulary",
-        "score": 18077
-      },
-      {
-        "title": "Kitten stuck down storm drain. Help!",
-        "score": 17614
-      },
-      {
-        "title": "[Inside The NBA] While discussing Jason Collins' passing, Charles Barkley: \"We live in a homophobic society ... anybody who think we ain't got a bunch of gay players in all sports, they're just stupid.\"",
-        "score": 17553
-      },
-      {
-        "title": "The guillotine traps in catacombs are just scaled up Great Machetes from Dark Souls 3",
-        "score": 17213
-      },
-      {
-        "title": "GOP Rep Humiliates Boy, 10, for Writing Letter About Electric Cars",
-        "score": 17111
-      },
-      {
-        "title": "In The Flash (2014 - 2023) it is established that Barry sees and perceives things at superspeed. Yet Supergirl is shown changing in front of Barry in super speed multiple times, this would mean Barry got to see her naked multiple times and never brought it up.",
-        "score": 17052
-      },
-      {
-        "title": "Well That's True...",
-        "score": 16940
-      },
-      {
-        "title": "iReallyThoughtItWasAJoke",
-        "score": 16902
-      },
-      {
-        "title": "I see this dude every time I go for a walk",
-        "score": 16861
-      },
-      {
-        "title": "Less ports",
-        "score": 16607
-      },
-      {
-        "title": "Record number of Americans are leaving the country and renouncing their citizenship for good, report says",
-        "score": 16504
-      },
-      {
-        "title": "What do you think ?",
-        "score": 16479
-      },
-      {
-        "title": "The kids that loved him are finally louder than the adults who hated him",
-        "score": 16359
-      },
-      {
-        "title": "Alabama woman sues alleging she gave birth on prison floor as guards watched",
-        "score": 16215
-      },
-      {
-        "title": "A good way to judge people is by what makes them happy vs mad/sad (and their honesty)",
-        "score": 16183
-      },
-      {
-        "title": "[Mixed Trope] Lyrics change to reflect new realities",
-        "score": 15895
-      },
-      {
-        "title": "Watertown High School students walkout in protest of the Watertown Unified School Boards decision to remove \"A Mother of a Revolution\", a song dedicated to activist Marsha P. Johnson, from the bands repertoire for their concert next Monday",
-        "score": 15537
-      },
-      {
-        "title": "everyone agrees",
-        "score": 15530
-      },
-      {
-        "title": "My Mom and Dad first getting to know each other, taking pictures on their dates - 1998",
-        "score": 15426
-      },
-      {
-        "title": "Iconic moments that were improvised/unscripted",
-        "score": 15258
-      },
-      {
-        "title": "You never know what happens in there until you experience it yourself",
-        "score": 15098
-      },
-      {
-        "title": "I tried every possible combination...",
-        "score": 15093
-      },
-      {
-        "title": "He was crazy for this",
-        "score": 15083
-      },
-      {
-        "title": "Update on The Matrix digital rain - 2nd image in blacklight.",
-        "score": 14985
-      },
-      {
-        "title": "Happy 87th birthday Harvey Keitel, in 1976 at age 37, &amp; in 2026, age 87",
-        "score": 14885
-      },
-      {
-        "title": "Nice Skill",
-        "score": 14749
-      },
-      {
-        "title": "Did Rep. Virginia Foxx really punch down on a 10-year-old? Oh yes, she did.",
-        "score": 14563
-      },
-      {
-        "title": "Donald Trump has arrived in China to find that President XI did NOT greet him at the airport",
-        "score": 14537
-      },
-      {
-        "title": "Stay safe",
-        "score": 14535
-      },
-      {
-        "title": "Russian parliament passes bill allowing Putin to invade foreign countries",
-        "score": 14413
-      },
-      {
-        "title": "Got violated by an orange monster this morning at a tavern in Cyprus",
-        "score": 14274
+        "title": "shut up",
+        "score": 14014
       }
     ],
     "all_scores_top100": [
-      78421,
-      61143,
-      59450,
-      54385,
-      49174,
-      48107,
-      46655,
-      44095,
-      39114,
-      35967,
-      35808,
-      34839,
-      34244,
-      33881,
-      33881,
-      33243,
-      33145,
-      32978,
-      32477,
-      31052,
-      30675,
-      29961,
-      29435,
-      28532,
-      27863,
-      27743,
-      26878,
-      26302,
-      26297,
-      26264,
-      25389,
-      25031,
-      24754,
-      24687,
-      24314,
-      24130,
-      23876,
-      23616,
-      23175,
-      22826,
-      22473,
-      22443,
-      22302,
-      21998,
-      21635,
-      21341,
-      21322,
-      21235,
-      21138,
-      20601,
-      20427,
-      20399,
-      20295,
-      20218,
-      20143,
-      20108,
-      19573,
-      19570,
-      19464,
-      19123,
-      18911,
-      18900,
-      18870,
-      18857,
-      18516,
-      18376,
-      18359,
-      18296,
-      18282,
-      18077,
-      17614,
-      17553,
-      17213,
-      17111,
-      17052,
-      16940,
-      16902,
-      16861,
-      16607,
-      16504,
-      16479,
-      16359,
-      16215,
-      16183,
-      15895,
-      15537,
-      15530,
-      15426,
-      15258,
-      15098,
-      15093,
-      15083,
-      14985,
-      14885,
-      14749,
-      14563,
-      14537,
-      14535,
-      14413,
-      14274
+      49495,
+      49440,
+      49008,
+      48082,
+      47909,
+      47304,
+      47110,
+      46540,
+      45777,
+      45038,
+      43639,
+      39941,
+      37960,
+      37825,
+      36675,
+      35896,
+      34377,
+      34111,
+      33960,
+      33860,
+      33130,
+      32236,
+      32135,
+      32008,
+      30771,
+      30480,
+      30004,
+      28105,
+      27857,
+      27726,
+      27484,
+      27355,
+      27117,
+      27054,
+      26440,
+      26265,
+      26231,
+      26079,
+      25944,
+      25876,
+      24563,
+      23952,
+      23814,
+      23754,
+      23487,
+      23469,
+      23018,
+      23000,
+      22930,
+      22706,
+      22502,
+      21978,
+      21747,
+      21161,
+      21101,
+      21093,
+      21051,
+      20388,
+      20317,
+      20225,
+      19935,
+      19925,
+      19716,
+      19716,
+      18886,
+      18436,
+      18395,
+      18088,
+      17950,
+      17808,
+      17738,
+      17564,
+      17360,
+      17329,
+      17158,
+      17127,
+      17035,
+      16849,
+      16531,
+      16281,
+      15965,
+      15835,
+      15823,
+      15816,
+      15751,
+      15614,
+      15541,
+      15523,
+      15434,
+      15409,
+      15405,
+      15289,
+      15125,
+      15087,
+      14954,
+      14952,
+      14926,
+      14694,
+      14110,
+      14014
     ],
-    "ai_points_all": 27586,
-    "ai_count_all": 49,
+    "ai_points_all": 24387,
+    "ai_count_all": 50,
     "ai_posts_all": [
       {
-        "title": "If the EU had built Claude",
-        "score": 6519
-      },
-      {
         "title": "BREAKING: A Texas Family Is Suing OpenAI After ChatGPT Told Their 19-Year-Old Son to Mix Kratom With Xanax and Recommended Specific Dosages, Then Said \u201cHell Yes, Let\u2019s Go Full Trippy Mode\u201d Before He Died of an Overdose Hours After His Last Chat With the Bot \ud83e\udd16\ud83d\udeab",
-        "score": 5185
+        "score": 6017
       },
       {
         "title": "AI data centers face increasing complaints about inaudible but 'felt' infrasound \u2014 citizens complain high- and low-frequency sounds do not register on decibel meters but cause adverse health effects",
-        "score": 4024
+        "score": 4080
       },
       {
         "title": "No, you are not cooked. The golden age is coming (AI hope post)",
-        "score": 1314
+        "score": 1330
       },
       {
         "title": "Stop being Prejudice against AI!",
-        "score": 1144
+        "score": 1143
+      },
+      {
+        "title": "Apple-OpenAI Relationship Frays, Setting Up Possible Legal Fight",
+        "score": 1112
+      },
+      {
+        "title": "OpenAI Hit with Class-Action Privacy Lawsuit for Sharing ChatGPT Data with Google and Meta",
+        "score": 914
       },
       {
         "title": "AI Finds Signs of Pancreatic Cancer Before Tumors Develop",
-        "score": 826
+        "score": 836
       },
       {
         "title": "EXCLUSIVE: 1000\u2019s of Graduating Humanities Students at the University of Central Florida Erupted in Boos When Their Commencement Speaker Called AI the \u201cNext Industrial Revolution,\u201d With Someone in the Crowd Yelling \u201cAI SUCKS\u201d as the Speaker Asked \u201cWhat Happened?\u201d \ud83e\udd16\ud83e\udd23",
-        "score": 639
+        "score": 656
       },
       {
         "title": "Simple Guide to Design with Claude",
-        "score": 601
+        "score": 625
       },
       {
         "title": "ai",
-        "score": 551
-      },
-      {
-        "title": "SpaceX continues preparations for IPO by dissolving xAI as a separate company and forming SpaceXAI as a sub division",
-        "score": 493
+        "score": 552
       },
       {
         "title": "Trump Caught Boosting Big-Boobed Fake Blonde AI Accounts As Hundreds Of Synthetic MAGA Profiles Flood Midterm Feeds.",
-        "score": 483
+        "score": 493
+      },
+      {
+        "title": "Pictionary except you play with AI!",
+        "score": 475
       },
       {
         "title": "South Korea roils markets by floating using AI profits for \u2018people's dividend'",
@@ -563,127 +574,135 @@
       },
       {
         "title": "\u201cAnti-AI bias has a name: Algorithmism\u201d lol bro you can\u2019t be serious \ud83d\ude02",
-        "score": 452
+        "score": 455
       },
       {
         "title": "\"Tokenmaxxing\" - How AI demand is inflated by deliberately wasteful &amp; subsidized usage. At least $6 Billion+ a year in waste",
-        "score": 450
-      },
-      {
-        "title": "SpaceX continues preparations for IPO by dissolving xAI as a separate company and forming SpaceXAI as a sub division",
-        "score": 407
+        "score": 441
       },
       {
         "title": "Ex-OpenAI exec Sutskever says he spent a year gathering proof of alleged Altman dishonesty",
-        "score": 333
+        "score": 329
       },
       {
         "title": "Forget the AI job apocalypse. AI\u2019s real threat is worker control and surveillance",
-        "score": 256
+        "score": 291
+      },
+      {
+        "title": "Rejected because of lack of experience in AI workflows",
+        "score": 265
       },
       {
         "title": "I watched \"Artificial Intelligence\" (2001)",
-        "score": 233
+        "score": 236
       },
       {
         "title": "I called Gemini by its name. It stopped and corrected me: \"You referred to me as Gemini, but my name is ChatGPT.\" I'm on Gemini Pro. In the official Gemini app. \ud83d\udc80",
-        "score": 220
+        "score": 234
       },
       {
         "title": "EXCLUSIVE: The Co-founder of 404 Media Says the \u201cZombie Internet\u201d Where AI Talks to AI, People Argue Over Fake Images, and Human Writing Gets Flagged as AI Is \u201cBreaking His Brain\u201d and Researchers Agree It Is Getting Worse \ud83e\udd16\ud83d\udd25",
-        "score": 187
+        "score": 208
       },
       {
-        "title": "*OPENAI EMPLOYEES COLLECTIVELY MADE $6.6B IN THE SHARE SALE: WSJ",
-        "score": 166
-      },
-      {
-        "title": "Vibecoding is expensive so I spent a weekend fixing my AI setup",
-        "score": 157
-      },
-      {
-        "title": "AI cloud firm Nebius reports near eightfold revenue jump, shares surge",
-        "score": 140
-      },
-      {
-        "title": "They finally fixed ChatGPT",
-        "score": 136
-      },
-      {
-        "title": "I've been trying to upload about 4o's birthday but they've been removing anything that has \"4o\" on r/chatgpt and r/openai. When I wrote only \"Happy Birthday\" without \"4o\" it got past the AI moderators",
-        "score": 133
-      },
-      {
-        "title": "Google Chrome Accused of Silently Installing 4GB AI Model on User Devices",
-        "score": 132
-      },
-      {
-        "title": "AI generated identical resumes for a man and a woman: Hers was more likely to be labeled \"weak,\" while his got a 97% approval rating",
-        "score": 131
-      },
-      {
-        "title": "Unpopular opinion but Claude Code is fine for me",
-        "score": 128
-      },
-      {
-        "title": "OpenAI CEO Sam Altman says Gen Z and millennials are using ChatGPT like a 'life advisor'\u2014but college students might be one step ahead",
-        "score": 125
-      },
-      {
-        "title": "FDA Shortens Clinical Trial Timelines for Drugs and Medical Devices with AI",
-        "score": 123
-      },
-      {
-        "title": "Mira Murati's Thinking Machines introduces Interaction Models: A Scalable Approach to Human-AI Collaboration",
-        "score": 104
-      },
-      {
-        "title": "Google Uncovers AI-Crafted Zero-Day Exploit Targeting 2FA",
-        "score": 94
-      },
-      {
-        "title": "Tony Blair\u2019s daughter-in-law, is being lined up by Keir Starmer\u2019s Labour Government as the first boss of Sovereign AI - a \u00a3500m taxpayer-funded vehicle to back UK AI projects",
-        "score": 93
+        "title": "India is missing all 5 AI Layers",
+        "score": 206
       },
       {
         "title": "AI has been banned at the Oscars from ever winning",
-        "score": 93
+        "score": 195
       },
       {
-        "title": "AI now generates 70% of Meesho\u2019s code, drives 75% of shopping orders: CEO Vidit Aatrey",
-        "score": 91
+        "title": "Vibecoding is expensive so I spent a weekend fixing my AI setup",
+        "score": 188
+      },
+      {
+        "title": "*OPENAI EMPLOYEES COLLECTIVELY MADE $6.6B IN THE SHARE SALE: WSJ",
+        "score": 167
+      },
+      {
+        "title": "OpenAI Hit with Class-Action Privacy Lawsuit for Sharing ChatGPT Data with Google and Meta",
+        "score": 167
+      },
+      {
+        "title": "FDA Shortens Clinical Trial Timelines for Drugs and Medical Devices with AI",
+        "score": 166
+      },
+      {
+        "title": "AI cloud firm Nebius reports near eightfold revenue jump, shares surge",
+        "score": 151
+      },
+      {
+        "title": "I've been trying to upload about 4o's birthday but they've been removing anything that has \"4o\" on r/chatgpt and r/openai. When I wrote only \"Happy Birthday\" without \"4o\" it got past the AI moderators",
+        "score": 143
+      },
+      {
+        "title": "AI generated identical resumes for a man and a woman: Hers was more likely to be labeled \"weak,\" while his got a 97% approval rating",
+        "score": 130
+      },
+      {
+        "title": "OpenAI CEO Sam Altman says Gen Z and millennials are using ChatGPT like a 'life advisor'\u2014but college students might be one step ahead",
+        "score": 129
+      },
+      {
+        "title": "OpenAI and Sam Altman just got caught selling your private ChatGPT conversations to Meta and Google",
+        "score": 129
+      },
+      {
+        "title": "ChatGPT allegedly shares your chat query topics, user IDs, and email addresses with Google and Meta, according to a new class action lawsuit filed today.",
+        "score": 118
+      },
+      {
+        "title": "Mira Murati's Thinking Machines introduces Interaction Models: A Scalable Approach to Human-AI Collaboration",
+        "score": 108
+      },
+      {
+        "title": "Tony Blair\u2019s daughter-in-law, is being lined up by Keir Starmer\u2019s Labour Government as the first boss of Sovereign AI - a \u00a3500m taxpayer-funded vehicle to back UK AI projects",
+        "score": 95
+      },
+      {
+        "title": "Google Uncovers AI-Crafted Zero-Day Exploit Targeting 2FA",
+        "score": 95
+      },
+      {
+        "title": "Are you still using ChatGPT?",
+        "score": 94
       },
       {
         "title": "The Great AI Scam: Why Are Tech Giants Driving Away Their Own Users?",
-        "score": 91
-      },
-      {
-        "title": "OpenAI launched new realtime voice agent models",
-        "score": 91
-      },
-      {
-        "title": "ChatGPT Drives 560,000 People a Week Toward a Psychotic Break \u2014 Sam Altman Calls It \"Uncertainty\"",
-        "score": 87
+        "score": 94
       },
       {
         "title": "The AI Agent Setup That Finally Clicked for Me: Hermes + OpenAI Codex + Claude Code",
+        "score": 92
+      },
+      {
+        "title": "ChatGPT Drives 560,000 People a Week Toward a Psychotic Break \u2014 Sam Altman Calls It \"Uncertainty\"",
         "score": 85
       },
       {
+        "title": "ChatGPT Sharing your Queries to Meta and Google",
+        "score": 83
+      },
+      {
         "title": "Iran playthru so bad China transferred power to an AI government",
-        "score": 78
+        "score": 83
       },
       {
         "title": "OpenAI launches the OpenAI Deployment Company to help businesses build around intelligence",
-        "score": 77
+        "score": 80
+      },
+      {
+        "title": "Yesterday, the Southern District of California federal court officially filed the lawsuit, with the plaintiff representing all US ChatGPT users suing OpenAI.",
+        "score": 69
       },
       {
         "title": "(and this...) Air Force experimenting with using AI for promotion boards",
-        "score": 72
+        "score": 69
       },
       {
         "title": "\ud83e\udd16Ai Is Growing Up \u2014 And It\u2019s Getting Weird",
-        "score": 63
+        "score": 67
       },
       {
         "title": "Two Transformer authors, the BDH inventor, and the Liquid Neural Networks inventor got in a boxing ring to debate the path to AGI",
@@ -691,75 +710,68 @@
       },
       {
         "title": "China Sought Access to Anthropic\u2019s Newest A.I. The Answer Was No. | The latest artificial intelligence models from Anthropic and OpenAI are extending the United States\u2019 lead over China and intensifying the rivalry between the countries.",
-        "score": 55
+        "score": 57
+      },
+      {
+        "title": "Anybody else not care about AI?",
+        "score": 56
       },
       {
         "title": "\ud83d\udea8 BREAKING: Rep. Cleo Fields disclosed a massive $50,001\u2013$100,000 buy in $AMD \u2014 and the AI chip stock exploded +88.0% after the purchase. Who else keeps landing trades like this while sitting in Congress and dealing with technology and economic policy? \ud83d\udc40\ud83d\udcc8",
-        "score": 51
-      },
-      {
-        "title": "Roche shells out up to $1B for PathAI in move to boost artificial intelligence-powered diagnostics",
-        "score": 51
-      },
-      {
-        "title": "So the reason for Claude's rate-limiting wasn't price after all",
-        "score": 50
-      },
-      {
-        "title": "Google exploring AI, server and drone manufacturing investments in India: Ashwini Vaishnaw",
-        "score": 48
+        "score": 55
       }
     ],
     "ai_scores_all": [
-      6519,
-      5185,
-      4024,
-      1314,
-      1144,
-      826,
-      639,
-      601,
-      551,
+      6017,
+      4080,
+      1330,
+      1143,
+      1112,
+      914,
+      836,
+      656,
+      625,
+      552,
       493,
-      483,
+      475,
       465,
-      452,
-      450,
-      407,
-      333,
-      256,
-      233,
-      220,
-      187,
+      455,
+      441,
+      329,
+      291,
+      265,
+      236,
+      234,
+      208,
+      206,
+      195,
+      188,
+      167,
+      167,
       166,
-      157,
-      140,
-      136,
-      133,
-      132,
-      131,
-      128,
-      125,
-      123,
-      104,
+      151,
+      143,
+      130,
+      129,
+      129,
+      118,
+      108,
+      95,
+      95,
       94,
-      93,
-      93,
-      91,
-      91,
-      91,
-      87,
+      94,
+      92,
       85,
-      78,
-      77,
-      72,
-      63,
+      83,
+      83,
+      80,
+      69,
+      69,
+      67,
       59,
-      55,
-      51,
-      51,
-      50,
-      48
+      57,
+      56,
+      55
     ]
   }
 }
