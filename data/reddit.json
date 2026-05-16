@@ -1,777 +1,797 @@
 {
-  "date": "2026-05-15",
+  "date": "2026-05-16",
   "reddit": {
-    "total_points_top100": 2525594,
-    "ai_points_top100": 33960,
+    "total_points_top100": 2654600,
+    "ai_points_top100": 18434,
     "ai_count_top100": 1,
     "ai_posts_top100": [
       {
-        "title": "Princeton scraps honor code and will supervise exams for first time in 133 years because of AI",
-        "score": 33960
+        "title": "How I found out a YT channel I\u2019ve recently gotten into is using AI",
+        "score": 18434
       }
     ],
     "ai_scores_top100": [
-      33960
+      18434
     ],
     "all_top100_posts": [
       {
-        "title": "meirl",
-        "score": 49495
+        "title": "A data center in New Jersey was canceled when residents showed up and fought it",
+        "score": 86319
       },
       {
-        "title": "Circassian folk dance",
-        "score": 49440
+        "title": "Like father , like son \ud83d\ude42\u200d\u2195\ufe0f",
+        "score": 80889
       },
       {
-        "title": "Kittens in storm drain successfully rescued. Thanks, everyone!",
-        "score": 49008
+        "title": "I did it. Single mom of two. Florida, 275k, 3.9%",
+        "score": 79345
       },
       {
-        "title": "The New American Gothic, Criselda Vasquez, Oil on Canvas, 2017",
-        "score": 48082
+        "title": "What are your thoughts. (IPhone vs every other phone)",
+        "score": 75520
       },
       {
-        "title": "Next time you wash your hands think.. that's how these things are made.",
-        "score": 47909
+        "title": "There's a fox family living under our front porch and sometimes the babies take a nap on our mat.",
+        "score": 75341
       },
       {
-        "title": "Seriously it's that simple:",
-        "score": 47304
+        "title": "Roommate studying late at night.",
+        "score": 65521
       },
       {
-        "title": "The goat",
-        "score": 47110
+        "title": "Mike Johnson says we should have sympathy because Congress isn\u2019t paid enough\u2014so we should \u201callow\u201d insider trading just so they can take care of their families(70% of Americans can\u2019t afford a $1k emergency)",
+        "score": 55544
       },
       {
-        "title": "This is my cheetah room",
-        "score": 46540
+        "title": "\"Can I sleep with you...?\" \ud83d\udc08",
+        "score": 48603
       },
       {
-        "title": "Family Van Toyota Sienna saves the day",
-        "score": 45777
+        "title": "Man splits his $22 million lottery winnings with his best friend after they agreed 28 years ago to share it if either of them won",
+        "score": 48174
       },
       {
-        "title": "It was always just that simple",
-        "score": 45038
+        "title": "Now do cancer.",
+        "score": 47917
       },
       {
-        "title": "Test Results [OC]",
-        "score": 43639
+        "title": "Frog Rock is a large, naturally shaped granite boulder and historic tourist attraction located in New Boston, New Hampshire. Situated roughly 75 miles northwest of Boston, it takes about 1.5 hours to drive there. Once a highly popular 19th-century picnic spot, it is now a hidden local gem.",
+        "score": 45850
       },
       {
-        "title": "meirl",
-        "score": 39941
+        "title": "Elon Mindset",
+        "score": 44929
       },
       {
-        "title": "Construction workers refuse to use the stairs and instead climbed the hill to the point the grass died",
-        "score": 37960
+        "title": "'Point of no return': 36 countries join special tribunal to prosecute Vladimir Putin",
+        "score": 44748
       },
       {
-        "title": "This seems like a good neighborhood!",
-        "score": 37825
+        "title": "Tell a nation it's fat without telling it it's fat.",
+        "score": 43452
       },
       {
-        "title": "Illustrated this after seeing Trump's new statue and being reminded of an old poem about kings (OC)",
-        "score": 36675
+        "title": "My LEGO Pinsir alternate build of Eevee. No extra pieces used.",
+        "score": 40295
       },
       {
-        "title": "me_irl",
-        "score": 35896
+        "title": "These warning signs at the Dublin Zoo in Ireland",
+        "score": 38202
       },
       {
-        "title": "College and Pro sports, are you listening?!?",
-        "score": 34377
+        "title": "I made an entirely wood marquetry dress inspired by this year's Met Gala theme",
+        "score": 38019
       },
       {
-        "title": "This is hilarious",
-        "score": 34111
+        "title": "Guy at Dunkin took my VIP card",
+        "score": 36619
       },
       {
-        "title": "Princeton scraps honor code and will supervise exams for first time in 133 years because of AI",
-        "score": 33960
+        "title": "Start the movement NOW",
+        "score": 35677
       },
       {
-        "title": "Adopted this white cat 3 days ago and now they're already super close to each other.",
-        "score": 33860
+        "title": "Duh\u2026I wonder why they view Socialism in a positive light\u2026",
+        "score": 35000
       },
       {
-        "title": "US border patrol chief resigns after claims of sex with prostitutes abroad",
-        "score": 33130
+        "title": "Epstein Files Erased",
+        "score": 33748
       },
       {
-        "title": "me_irl",
-        "score": 32236
-      },
-      {
-        "title": "Barbara Palvin and Dylan Sprouse are expecting their first child together",
-        "score": 32135
-      },
-      {
-        "title": "Bird of prey with precision",
-        "score": 32008
-      },
-      {
-        "title": "I had the same result",
-        "score": 30771
-      },
-      {
-        "title": "Petah help",
-        "score": 30480
-      },
-      {
-        "title": "Final interview",
-        "score": 30004
-      },
-      {
-        "title": "And the Oscar *does not* go to",
-        "score": 28105
-      },
-      {
-        "title": "Emails show FBI Director Kash Patel\u2019s Hawaii trip included \u2018VIP snorkel\u2019 at a Pearl Harbor memorial",
-        "score": 27857
-      },
-      {
-        "title": "Hidden deep in a Norwegian forest is a museum that looks like it's from the year 2077",
-        "score": 27726
-      },
-      {
-        "title": "I just sold all of this. Cancer sucks!",
-        "score": 27484
-      },
-      {
-        "title": "Global-scale fully weaponized autistic pedantry.",
-        "score": 27355
-      },
-      {
-        "title": "Differences in the spot pattern of the Cheetah, Leopard, and Jaguar",
-        "score": 27117
-      },
-      {
-        "title": "ICE\u2019s Unfair Reputation",
-        "score": 27054
-      },
-      {
-        "title": "Freeze! Drop the mifepristone!",
-        "score": 26440
-      },
-      {
-        "title": "Rachel Entrekin, 34, beat everyone (man and woman) in the Cocoona 250 mile in Flagstaff, Arizona. She set a course record of 56 hours, 9 minutes, and 48 seconds",
-        "score": 26265
-      },
-      {
-        "title": "Husband and wife talking to this police officer through the ring camera at the same time",
-        "score": 26231
-      },
-      {
-        "title": "The congressman should also stick to his own state.",
-        "score": 26079
-      },
-      {
-        "title": "No devices has replaced the no smoking sign on my flight",
-        "score": 25944
-      },
-      {
-        "title": "This is beautiful!. If rainbow was a person\ud83c\udf08...",
-        "score": 25876
-      },
-      {
-        "title": "We got another one, boys",
-        "score": 24563
-      },
-      {
-        "title": "Maybe all the right girls are already taken.",
-        "score": 23952
-      },
-      {
-        "title": "They don't care about us \ud83e\udd40\ud83e\udd40",
-        "score": 23814
-      },
-      {
-        "title": "This is the most beautiful bird I have ever seen",
-        "score": 23754
-      },
-      {
-        "title": "He would have the whole island on tape",
-        "score": 23487
-      },
-      {
-        "title": "Phobe pt. 2/8 - Tiff\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f&amp; Eve [OC]",
-        "score": 23469
-      },
-      {
-        "title": "Feeling were hurt",
-        "score": 23018
-      },
-      {
-        "title": "Rachel Scott, I\u2019m with Her!!!",
-        "score": 23000
-      },
-      {
-        "title": "TIL that infants who live with dogs at three months of age are 90% less likely to develop a food allergy.",
-        "score": 22930
-      },
-      {
-        "title": "\u201cThe best-preserved warship in the world!\u201d",
-        "score": 22706
-      },
-      {
-        "title": "88-year-old walks at Georgia Tech graduation, after missing original ceremonies 66 years ago, due to military service",
-        "score": 22502
-      },
-      {
-        "title": "He said he was a trump supporter and I walked out on the date",
-        "score": 21978
-      },
-      {
-        "title": "Japan when another country tries to remind them about comfort women",
-        "score": 21747
-      },
-      {
-        "title": "Found kitten in wall - name suggestions pls",
-        "score": 21161
-      },
-      {
-        "title": "Suspended his license immediately",
-        "score": 21101
-      },
-      {
-        "title": "lol.......",
-        "score": 21093
-      },
-      {
-        "title": "They're literally robots",
-        "score": 21051
-      },
-      {
-        "title": "me_irl",
-        "score": 20388
-      },
-      {
-        "title": "Republicans vote to dilute gas as prices rise above $4.50",
-        "score": 20317
-      },
-      {
-        "title": "plague INC type of shi",
-        "score": 20225
-      },
-      {
-        "title": "This has to be an all-timer as far as insults go.",
-        "score": 19935
-      },
-      {
-        "title": "Tying A Proper Fly",
-        "score": 19925
-      },
-      {
-        "title": "of a Australonuphis, commonly called Australian beach worms",
-        "score": 19716
-      },
-      {
-        "title": "Meet the new Achilles.",
-        "score": 19716
-      },
-      {
-        "title": "This is incredibly sweet.",
-        "score": 18886
-      },
-      {
-        "title": "Bird and Dee in their forever home! Lots of cuddle puddles.",
-        "score": 18436
-      },
-      {
-        "title": "people saying white people be like but its actually what white people be like",
-        "score": 18395
-      },
-      {
-        "title": "tf you mean the two fingers are literal?",
-        "score": 18088
-      },
-      {
-        "title": "Blursed landlord",
-        "score": 17950
-      },
-      {
-        "title": "He completely melted during grooming",
-        "score": 17808
-      },
-      {
-        "title": "Israel says it will sue New York Times over article on sexual abuse of Palestinian prisoners",
-        "score": 17738
-      },
-      {
-        "title": "(18) to (19) I have managed to crawl out of a very dark place",
-        "score": 17564
-      },
-      {
-        "title": "Definitely the highest",
-        "score": 17360
-      },
-      {
-        "title": "I made a Caterpie",
-        "score": 17329
-      },
-      {
-        "title": "Absolute unit",
-        "score": 17158
-      },
-      {
-        "title": "Unpaid work is work",
-        "score": 17127
-      },
-      {
-        "title": "TIL that China consumes 46% of cigarettes in the entire world at a rate of 2.4 trillion a year.",
-        "score": 17035
-      },
-      {
-        "title": "\"In Japan, Heart Surgeon Number 1\"",
-        "score": 16849
-      },
-      {
-        "title": "Intense sparks erupt inside indian train squat toilet due to breaks",
-        "score": 16531
-      },
-      {
-        "title": "Power Nap",
-        "score": 16281
-      },
-      {
-        "title": "People are scared of socialism, but Social Democracy is an option and it's not so scary.",
-        "score": 15965
-      },
-      {
-        "title": "I can steal your man if I want to \ud83d\ude3c @hisserina",
-        "score": 15835
-      },
-      {
-        "title": "Pieces of media that invented new slang terms",
-        "score": 15823
-      },
-      {
-        "title": "I guess investors aren't smart people",
-        "score": 15816
+        "title": "bro switched to eco mode",
+        "score": 33681
       },
       {
         "title": "Meirl",
-        "score": 15751
+        "score": 33537
       },
       {
-        "title": "The percentage of US high school seniors who have ever consumed alcohol has fallen off a cliff over the past 50 years",
-        "score": 15614
+        "title": "This is heartwarming",
+        "score": 33231
       },
       {
-        "title": "This device could predict incoming phone calls (2000s)",
-        "score": 15541
+        "title": "Tired of the thirst traps, Here's my Cool Dad with his El Camino in 1981 ish",
+        "score": 31312
       },
       {
-        "title": "A man is somehow managing to do the moonwalk while riding a bicycle at the same time",
-        "score": 15523
+        "title": "Chudthebuilder finds out his initial bond is set a $1.25m \ud83e\udd23",
+        "score": 30622
       },
       {
-        "title": "Drake's a nice guy for letting Kendrick live rent free in his head.",
-        "score": 15434
+        "title": "The grass inside the ring of mushrooms is thicker than outside",
+        "score": 29674
       },
       {
-        "title": "This McDonalds, across from a high school, closes it's restrooms at lunch. Photo taken at 2pm.",
-        "score": 15409
+        "title": "Scooby-Doo type tactic in a haunted house",
+        "score": 28662
       },
       {
-        "title": "Since the 2010s, American conservatives increasingly experience worse health outcomes and higher mortality than liberals. Declining trust in medical professionals appears to be the mechanism, with lower willingness to seek care, follow clinical advice and believe in medication effectiveness.",
-        "score": 15405
+        "title": "TIL that Empress Ma was born poor and during a famine she stole cakes to feed her husband by hiding them in her breasts. The cakes were hot and she got burns. Later her husband became a rebel commander who became Emperor and made her his Empress. He was deeply devoted to her even as an Emperor.",
+        "score": 28596
       },
       {
-        "title": "Literacy = zero",
-        "score": 15289
+        "title": "Baby Hippo sleeping with an orphanage handler",
+        "score": 28560
       },
       {
-        "title": "People before things",
-        "score": 15125
+        "title": "My parked car was rear-ended in the dumbest way possible",
+        "score": 27834
       },
       {
-        "title": "The pride flag is ugly.",
-        "score": 15087
+        "title": "A great choice",
+        "score": 27773
       },
       {
-        "title": "Someone with kid asked a question to people without kids",
-        "score": 14954
+        "title": "cat puddle",
+        "score": 27490
       },
       {
-        "title": "This slo-mo video of a wave breaking",
-        "score": 14952
+        "title": "[OC] I stand with Israel, I also stand with the guy who was vocally anti-Israel",
+        "score": 27130
       },
       {
-        "title": "Rare UK W",
-        "score": 14926
+        "title": "Who remembers this?",
+        "score": 26338
       },
       {
-        "title": "Ghosts of past, present, and future",
-        "score": 14694
+        "title": "Blursed_Blessing",
+        "score": 26258
       },
       {
-        "title": "TIL that the name \"Khaleesi\" has been in the top 1,000 list of popular names used for newborns since 2014. Though the popularity has decreased since \"Game of Thrones\" ended, there are about 120 girls names Khaleesi each year",
-        "score": 14110
+        "title": "China owns America",
+        "score": 26219
       },
       {
-        "title": "shut up",
-        "score": 14014
+        "title": "Trump warns Taiwan against declaring independence, hours after summit with China's Xi",
+        "score": 26113
+      },
+      {
+        "title": "cupid's be proud of it",
+        "score": 24835
+      },
+      {
+        "title": "Found a tiny stowaway hiding in my hose... he immediately claimed this hibiscus as his throne \ud83d\udc38\ud83c\udf3a",
+        "score": 24129
+      },
+      {
+        "title": "Meirl",
+        "score": 23536
+      },
+      {
+        "title": "Does she seem a bit self centred?",
+        "score": 22842
+      },
+      {
+        "title": "It\u2019s always Oranges that has violent urges like this",
+        "score": 22537
+      },
+      {
+        "title": "A tourist in Buenos Aires takes down a bike-riding phone thief and holds him until police arrive.",
+        "score": 22021
+      },
+      {
+        "title": "I made the $2 emergency meal and it was honestly one of the best things I have ever eaten! Thank you.",
+        "score": 21863
+      },
+      {
+        "title": "NASA just dropped new Artemis II video",
+        "score": 21566
+      },
+      {
+        "title": "China owns us.",
+        "score": 21043
+      },
+      {
+        "title": "Patrick Kilonzo Mwalua noticed wild animals in Kenya were dying of thirst. So he started driving 3,000 gallons of water to them every single day (More in comments).",
+        "score": 20409
+      },
+      {
+        "title": "Neighbor replaced fence and left the old wood scraps in my yard to deal with.",
+        "score": 20157
+      },
+      {
+        "title": "Cutting of Japanese noodles called Soba",
+        "score": 20054
+      },
+      {
+        "title": "Peter why should the nails be broken?",
+        "score": 20028
+      },
+      {
+        "title": "The BBC uses robo-cameras disguised as dung heaps to film wildlife up close.",
+        "score": 19976
+      },
+      {
+        "title": "[Request] Isn\u2019t this true for basically any 3 cities?",
+        "score": 19950
+      },
+      {
+        "title": "Cisco announces record revenue and 4,000 layoffs in the same day",
+        "score": 19757
+      },
+      {
+        "title": "$500,000 or a date with Megan thee stallion",
+        "score": 19663
+      },
+      {
+        "title": "Rolling ink onto a linocut printing block",
+        "score": 19638
+      },
+      {
+        "title": "Quoted Himself Into A Corner",
+        "score": 19551
+      },
+      {
+        "title": "My Husband's Fallout Costume",
+        "score": 19460
+      },
+      {
+        "title": "TIL most people in France did not speak French as recently as 1794, when only 11% of the population of France spoke fluent French. Instead, most people spoke regional languages like Occitan, Breton, Alsatian etc. French only became the majority language later on due to heavy assimilation efforts.",
+        "score": 18698
+      },
+      {
+        "title": "How I found out a YT channel I\u2019ve recently gotten into is using AI",
+        "score": 18434
+      },
+      {
+        "title": "Wore my husbands swim trunks and now I\u2019m mad.",
+        "score": 18369
+      },
+      {
+        "title": "TIL that Hebrew is the only successful attempt at a large-scale linguistic revival. After having largely been replaced by other languages between the 2nd and 4th centuries. It was revived as a language beginning in the late 19th century",
+        "score": 18124
+      },
+      {
+        "title": "I will not",
+        "score": 17792
+      },
+      {
+        "title": "Why tho?",
+        "score": 17628
+      },
+      {
+        "title": "Unregulated capitalism would kill us all.",
+        "score": 17086
+      },
+      {
+        "title": "\ud83d\udd25 600 fps of pure precision by Kingfisher!",
+        "score": 16845
+      },
+      {
+        "title": "Lines and chairs",
+        "score": 16691
+      },
+      {
+        "title": "One of the first Indians the Pilgrims ran into spoke English.",
+        "score": 16462
+      },
+      {
+        "title": "Panchito, the crocodile who spent years swimming calmly alongside tourists at Casa Cenote, bit an elderly visitor today. Witnesses say a group had been throwing stones at the animal to provoke a reaction and film it. It is the first recorded attack involving the crocodile.",
+        "score": 16351
+      },
+      {
+        "title": "Shutting Down USAID Led to a Rise in Global Violence. Protests and riots increased by 10%, incidents of armed fighting rose by 6.9%, and battle-related fatalities grew 9.3%. The uptick in violence began almost immediately after the aid stopped and remained elevated for months.",
+        "score": 16191
+      },
+      {
+        "title": "Transgender Americans are fleeing hostile red states. Seattle says it\u2019s overwhelmed",
+        "score": 16179
+      },
+      {
+        "title": "Lmao.",
+        "score": 15904
+      },
+      {
+        "title": "Hospital says RFK Jr. did not operate robotic arm during heart surgery",
+        "score": 15870
+      },
+      {
+        "title": "Missing Black Children in Virginia",
+        "score": 15837
+      },
+      {
+        "title": "Americans overwhelmingly believe the cost of living, from groceries to housing, was lower under Biden",
+        "score": 15818
+      },
+      {
+        "title": "Clueless Dad supporting Daughter",
+        "score": 15577
+      },
+      {
+        "title": "My Pinsir alternate build of Eevee. No extra pieces used.",
+        "score": 15444
+      },
+      {
+        "title": "Surrendering my cat today - second guessing everything, need honest opinions",
+        "score": 15236
+      },
+      {
+        "title": "TIL about the \"Endless Eight\" arc of the anime The Melancholy of Haruhi Suzumiya. The arc, which featured the characters of the show trapped in a time loop, featured the same episode eight times in a row with minute differences, all animated and recorded from scratch each time.",
+        "score": 14949
+      },
+      {
+        "title": "Chap on her shoulder",
+        "score": 14852
+      },
+      {
+        "title": "You\u2019re Getting Robbed. By Trump. In Broad Daylight.",
+        "score": 14672
+      },
+      {
+        "title": "Spanberger\u2019s $35 Insulin Win",
+        "score": 14468
+      },
+      {
+        "title": "Mass casualty incident\u2019 after explosion near Maine lumber complex",
+        "score": 14410
+      },
+      {
+        "title": "Toddler Walks Away Unharmed After Police PIT Maneuver Ends High-Speed Chase in Arkansas",
+        "score": 14366
+      },
+      {
+        "title": "Shitty week at work. Think I\u2019ll treat myself by buying the art book of one of my favourite films\u2026",
+        "score": 14315
+      },
+      {
+        "title": "Been poor for 3 years, just accidentally made $1100 off a $5 goodwill planter. Feel like the luckiest gal in the world today.",
+        "score": 14182
+      },
+      {
+        "title": "WCGW flooring it while driving through the countryside",
+        "score": 14057
+      },
+      {
+        "title": "SNL\u2019s Colin Jost said Hegseth sketch was rejected for being too ridiculous \u2014 then it happened in real life",
+        "score": 14049
+      },
+      {
+        "title": "President Xi gifted Trump Chinese rose seeds for the rose garden that no longer exists. And Trump thinks Xi respects him.",
+        "score": 14004
+      },
+      {
+        "title": "(Hated Tropes) \"Sorry, you\u2019re way to strong for this upcoming story arc, so you\u2019re gonna have to sit out so the plot can happen.\"",
+        "score": 13752
+      },
+      {
+        "title": "anime_irl",
+        "score": 13678
+      },
+      {
+        "title": "They're long lost sisters",
+        "score": 13652
+      },
+      {
+        "title": "Let's prolong its suffering so we can feel warm n fuzzy",
+        "score": 13491
+      },
+      {
+        "title": "I know Senator Miguez cried in his car after that",
+        "score": 13269
+      },
+      {
+        "title": "Grandma just moved into a retirement community and she already flexing \ud83d\ude02\ud83e\udd26\ud83c\udffe\u200d\u2640\ufe0f",
+        "score": 13262
+      },
+      {
+        "title": "Disconnected - Gator Days",
+        "score": 13174
+      },
+      {
+        "title": "Thanks for the Soft Landing See you Space Cowboy",
+        "score": 13167
+      },
+      {
+        "title": "Core memory loading\u2764\ufe0f!. Hope they had fun...",
+        "score": 13161
+      },
+      {
+        "title": "D&amp;D.",
+        "score": 12706
+      },
+      {
+        "title": "Maturing means I almost grew out of this content. Almost\u2026",
+        "score": 12671
       }
     ],
     "all_scores_top100": [
-      49495,
-      49440,
-      49008,
-      48082,
-      47909,
-      47304,
-      47110,
-      46540,
-      45777,
-      45038,
-      43639,
-      39941,
-      37960,
-      37825,
-      36675,
-      35896,
-      34377,
-      34111,
-      33960,
-      33860,
-      33130,
-      32236,
-      32135,
-      32008,
-      30771,
-      30480,
-      30004,
-      28105,
-      27857,
-      27726,
-      27484,
-      27355,
-      27117,
-      27054,
-      26440,
-      26265,
-      26231,
-      26079,
-      25944,
-      25876,
-      24563,
-      23952,
-      23814,
-      23754,
-      23487,
-      23469,
-      23018,
-      23000,
-      22930,
-      22706,
-      22502,
-      21978,
-      21747,
-      21161,
-      21101,
-      21093,
-      21051,
-      20388,
-      20317,
-      20225,
-      19935,
-      19925,
-      19716,
-      19716,
-      18886,
-      18436,
-      18395,
-      18088,
-      17950,
-      17808,
-      17738,
-      17564,
-      17360,
-      17329,
-      17158,
-      17127,
-      17035,
-      16849,
-      16531,
-      16281,
-      15965,
-      15835,
-      15823,
-      15816,
-      15751,
-      15614,
-      15541,
-      15523,
-      15434,
-      15409,
-      15405,
-      15289,
-      15125,
-      15087,
-      14954,
-      14952,
-      14926,
-      14694,
-      14110,
-      14014
+      86319,
+      80889,
+      79345,
+      75520,
+      75341,
+      65521,
+      55544,
+      48603,
+      48174,
+      47917,
+      45850,
+      44929,
+      44748,
+      43452,
+      40295,
+      38202,
+      38019,
+      36619,
+      35677,
+      35000,
+      33748,
+      33681,
+      33537,
+      33231,
+      31312,
+      30622,
+      29674,
+      28662,
+      28596,
+      28560,
+      27834,
+      27773,
+      27490,
+      27130,
+      26338,
+      26258,
+      26219,
+      26113,
+      24835,
+      24129,
+      23536,
+      22842,
+      22537,
+      22021,
+      21863,
+      21566,
+      21043,
+      20409,
+      20157,
+      20054,
+      20028,
+      19976,
+      19950,
+      19757,
+      19663,
+      19638,
+      19551,
+      19460,
+      18698,
+      18434,
+      18369,
+      18124,
+      17792,
+      17628,
+      17086,
+      16845,
+      16691,
+      16462,
+      16351,
+      16191,
+      16179,
+      15904,
+      15870,
+      15837,
+      15818,
+      15577,
+      15444,
+      15236,
+      14949,
+      14852,
+      14672,
+      14468,
+      14410,
+      14366,
+      14315,
+      14182,
+      14057,
+      14049,
+      14004,
+      13752,
+      13678,
+      13652,
+      13491,
+      13269,
+      13262,
+      13174,
+      13167,
+      13161,
+      12706,
+      12671
     ],
-    "ai_points_all": 24387,
-    "ai_count_all": 50,
+    "ai_points_all": 28157,
+    "ai_count_all": 54,
     "ai_posts_all": [
       {
         "title": "BREAKING: A Texas Family Is Suing OpenAI After ChatGPT Told Their 19-Year-Old Son to Mix Kratom With Xanax and Recommended Specific Dosages, Then Said \u201cHell Yes, Let\u2019s Go Full Trippy Mode\u201d Before He Died of an Overdose Hours After His Last Chat With the Bot \ud83e\udd16\ud83d\udeab",
-        "score": 6017
+        "score": 6745
       },
       {
         "title": "AI data centers face increasing complaints about inaudible but 'felt' infrasound \u2014 citizens complain high- and low-frequency sounds do not register on decibel meters but cause adverse health effects",
-        "score": 4080
+        "score": 4105
       },
       {
         "title": "No, you are not cooked. The golden age is coming (AI hope post)",
-        "score": 1330
-      },
-      {
-        "title": "Stop being Prejudice against AI!",
-        "score": 1143
-      },
-      {
-        "title": "Apple-OpenAI Relationship Frays, Setting Up Possible Legal Fight",
-        "score": 1112
+        "score": 1341
       },
       {
         "title": "OpenAI Hit with Class-Action Privacy Lawsuit for Sharing ChatGPT Data with Google and Meta",
-        "score": 914
+        "score": 1245
       },
       {
-        "title": "AI Finds Signs of Pancreatic Cancer Before Tumors Develop",
-        "score": 836
+        "title": "Apple-OpenAI Relationship Frays, Setting Up Possible Legal Fight",
+        "score": 1243
+      },
+      {
+        "title": "OpenAI feels \u201cburned\u201d by Apple\u2019s crappy ChatGPT integration, insiders say",
+        "score": 1087
+      },
+      {
+        "title": "j\u00fcst juss usbe ai its its better",
+        "score": 1006
+      },
+      {
+        "title": "OpenAI now wants ChatGPT to access your bank accounts",
+        "score": 771
+      },
+      {
+        "title": "OpenAI now wants ChatGPT to access your bank accounts",
+        "score": 716
       },
       {
         "title": "EXCLUSIVE: 1000\u2019s of Graduating Humanities Students at the University of Central Florida Erupted in Boos When Their Commencement Speaker Called AI the \u201cNext Industrial Revolution,\u201d With Someone in the Crowd Yelling \u201cAI SUCKS\u201d as the Speaker Asked \u201cWhat Happened?\u201d \ud83e\udd16\ud83e\udd23",
-        "score": 656
+        "score": 659
       },
       {
-        "title": "Simple Guide to Design with Claude",
-        "score": 625
+        "title": "Pictionary except you play with AI!",
+        "score": 551
       },
       {
         "title": "ai",
-        "score": 552
+        "score": 550
       },
       {
         "title": "Trump Caught Boosting Big-Boobed Fake Blonde AI Accounts As Hundreds Of Synthetic MAGA Profiles Flood Midterm Feeds.",
         "score": 493
       },
       {
-        "title": "Pictionary except you play with AI!",
-        "score": 475
-      },
-      {
         "title": "South Korea roils markets by floating using AI profits for \u2018people's dividend'",
-        "score": 465
-      },
-      {
-        "title": "\u201cAnti-AI bias has a name: Algorithmism\u201d lol bro you can\u2019t be serious \ud83d\ude02",
-        "score": 455
+        "score": 472
       },
       {
         "title": "\"Tokenmaxxing\" - How AI demand is inflated by deliberately wasteful &amp; subsidized usage. At least $6 Billion+ a year in waste",
-        "score": 441
+        "score": 448
+      },
+      {
+        "title": "Impressions two weeks after moving from Claude Code to Codex",
+        "score": 376
       },
       {
         "title": "Ex-OpenAI exec Sutskever says he spent a year gathering proof of alleged Altman dishonesty",
-        "score": 329
+        "score": 331
       },
       {
         "title": "Forget the AI job apocalypse. AI\u2019s real threat is worker control and surveillance",
-        "score": 291
+        "score": 312
       },
       {
         "title": "Rejected because of lack of experience in AI workflows",
-        "score": 265
+        "score": 280
+      },
+      {
+        "title": "India is missing all 5 AI Layers",
+        "score": 277
+      },
+      {
+        "title": "Permanently banned by OpenAI for \"Cyber Abuse\" I didn\u2019t commit. No blocked prompts, no in app banners, just 4 silent emails to my spam folder.",
+        "score": 251
+      },
+      {
+        "title": "Detroit automakers have cut more than 20,000 U.S. salaried jobs \"as AI threat looms\" ... looming seems to be doing a lot of work lately.",
+        "score": 248
       },
       {
         "title": "I watched \"Artificial Intelligence\" (2001)",
-        "score": 236
+        "score": 246
       },
       {
         "title": "I called Gemini by its name. It stopped and corrected me: \"You referred to me as Gemini, but my name is ChatGPT.\" I'm on Gemini Pro. In the official Gemini app. \ud83d\udc80",
-        "score": 234
+        "score": 246
+      },
+      {
+        "title": "OpenAI feels \u201cburned\u201d by Apple\u2019s crappy ChatGPT integration, insiders say",
+        "score": 224
+      },
+      {
+        "title": "OpenAI launches ChatGPT for personal finance, will let you connect bank accounts",
+        "score": 222
+      },
+      {
+        "title": "OpenAI Hit with Class-Action Privacy Lawsuit for Sharing ChatGPT Data with Google and Meta",
+        "score": 222
+      },
+      {
+        "title": "AI has been banned at the Oscars from ever winning",
+        "score": 221
       },
       {
         "title": "EXCLUSIVE: The Co-founder of 404 Media Says the \u201cZombie Internet\u201d Where AI Talks to AI, People Argue Over Fake Images, and Human Writing Gets Flagged as AI Is \u201cBreaking His Brain\u201d and Researchers Agree It Is Getting Worse \ud83e\udd16\ud83d\udd25",
         "score": 208
       },
       {
-        "title": "India is missing all 5 AI Layers",
-        "score": 206
-      },
-      {
-        "title": "AI has been banned at the Oscars from ever winning",
-        "score": 195
-      },
-      {
         "title": "Vibecoding is expensive so I spent a weekend fixing my AI setup",
-        "score": 188
+        "score": 197
       },
       {
-        "title": "*OPENAI EMPLOYEES COLLECTIVELY MADE $6.6B IN THE SHARE SALE: WSJ",
-        "score": 167
+        "title": "Rep. Byron Donalds bought Marvell the day after NVIDIA's $2B investment in the company. He sits on 2 AI subcommittees. His own subcommittee announced an AI roundtable a week later. Trade is up 70%.",
+        "score": 176
       },
       {
-        "title": "OpenAI Hit with Class-Action Privacy Lawsuit for Sharing ChatGPT Data with Google and Meta",
-        "score": 167
+        "title": "OpenAI and Sam Altman just got caught selling your private ChatGPT conversations to Meta and Google",
+        "score": 172
       },
       {
         "title": "FDA Shortens Clinical Trial Timelines for Drugs and Medical Devices with AI",
-        "score": 166
+        "score": 172
+      },
+      {
+        "title": "*OPENAI EMPLOYEES COLLECTIVELY MADE $6.6B IN THE SHARE SALE: WSJ",
+        "score": 170
+      },
+      {
+        "title": "Artificial General Intelligence \"AGI\" will either destroy humanity or free humanity. We either get abundance or collapse. The difference between the two outcomes is weather or not we get UBI.",
+        "score": 159
       },
       {
         "title": "AI cloud firm Nebius reports near eightfold revenue jump, shares surge",
-        "score": 151
+        "score": 149
+      },
+      {
+        "title": "ChatGPT allegedly shares your chat query topics, user IDs, and email addresses with Google and Meta, according to a new class action lawsuit filed today.",
+        "score": 145
       },
       {
         "title": "I've been trying to upload about 4o's birthday but they've been removing anything that has \"4o\" on r/chatgpt and r/openai. When I wrote only \"Happy Birthday\" without \"4o\" it got past the AI moderators",
-        "score": 143
+        "score": 144
       },
       {
         "title": "AI generated identical resumes for a man and a woman: Hers was more likely to be labeled \"weak,\" while his got a 97% approval rating",
-        "score": 130
+        "score": 134
       },
       {
         "title": "OpenAI CEO Sam Altman says Gen Z and millennials are using ChatGPT like a 'life advisor'\u2014but college students might be one step ahead",
         "score": 129
       },
       {
-        "title": "OpenAI and Sam Altman just got caught selling your private ChatGPT conversations to Meta and Google",
-        "score": 129
-      },
-      {
-        "title": "ChatGPT allegedly shares your chat query topics, user IDs, and email addresses with Google and Meta, according to a new class action lawsuit filed today.",
-        "score": 118
+        "title": "Are you still using ChatGPT?",
+        "score": 109
       },
       {
         "title": "Mira Murati's Thinking Machines introduces Interaction Models: A Scalable Approach to Human-AI Collaboration",
         "score": 108
       },
       {
+        "title": "The AI Agent Setup That Finally Clicked for Me: Hermes + OpenAI Codex + Claude Code",
+        "score": 108
+      },
+      {
+        "title": "OpenAI reportedly considered legal action over Apple ChatGPT deal",
+        "score": 108
+      },
+      {
+        "title": "OpenAI now wants ChatGPT to access your bank accounts",
+        "score": 107
+      },
+      {
         "title": "Tony Blair\u2019s daughter-in-law, is being lined up by Keir Starmer\u2019s Labour Government as the first boss of Sovereign AI - a \u00a3500m taxpayer-funded vehicle to back UK AI projects",
-        "score": 95
+        "score": 94
+      },
+      {
+        "title": "Yesterday, the Southern District of California federal court officially filed the lawsuit, with the plaintiff representing all US ChatGPT users suing OpenAI.",
+        "score": 94
       },
       {
         "title": "Google Uncovers AI-Crafted Zero-Day Exploit Targeting 2FA",
-        "score": 95
-      },
-      {
-        "title": "Are you still using ChatGPT?",
-        "score": 94
-      },
-      {
-        "title": "The Great AI Scam: Why Are Tech Giants Driving Away Their Own Users?",
-        "score": 94
-      },
-      {
-        "title": "The AI Agent Setup That Finally Clicked for Me: Hermes + OpenAI Codex + Claude Code",
-        "score": 92
+        "score": 93
       },
       {
         "title": "ChatGPT Drives 560,000 People a Week Toward a Psychotic Break \u2014 Sam Altman Calls It \"Uncertainty\"",
-        "score": 85
+        "score": 87
+      },
+      {
+        "title": "Anybody else not care about AI?",
+        "score": 87
       },
       {
         "title": "ChatGPT Sharing your Queries to Meta and Google",
         "score": 83
       },
       {
-        "title": "Iran playthru so bad China transferred power to an AI government",
-        "score": 83
+        "title": "OpenAI launches the OpenAI Deployment Company to help businesses build around intelligence",
+        "score": 82
       },
       {
-        "title": "OpenAI launches the OpenAI Deployment Company to help businesses build around intelligence",
+        "title": "I vibe code with GPT-5.4 for ~$1/day (100M+ tokens) \u2014 some stories from China",
         "score": 80
       },
       {
-        "title": "Yesterday, the Southern District of California federal court officially filed the lawsuit, with the plaintiff representing all US ChatGPT users suing OpenAI.",
-        "score": 69
-      },
-      {
         "title": "(and this...) Air Force experimenting with using AI for promotion boards",
-        "score": 69
-      },
-      {
-        "title": "\ud83e\udd16Ai Is Growing Up \u2014 And It\u2019s Getting Weird",
-        "score": 67
-      },
-      {
-        "title": "Two Transformer authors, the BDH inventor, and the Liquid Neural Networks inventor got in a boxing ring to debate the path to AGI",
-        "score": 59
-      },
-      {
-        "title": "China Sought Access to Anthropic\u2019s Newest A.I. The Answer Was No. | The latest artificial intelligence models from Anthropic and OpenAI are extending the United States\u2019 lead over China and intensifying the rivalry between the countries.",
-        "score": 57
-      },
-      {
-        "title": "Anybody else not care about AI?",
-        "score": 56
-      },
-      {
-        "title": "\ud83d\udea8 BREAKING: Rep. Cleo Fields disclosed a massive $50,001\u2013$100,000 buy in $AMD \u2014 and the AI chip stock exploded +88.0% after the purchase. Who else keeps landing trades like this while sitting in Congress and dealing with technology and economic policy? \ud83d\udc40\ud83d\udcc8",
-        "score": 55
+        "score": 74
       }
     ],
     "ai_scores_all": [
-      6017,
-      4080,
-      1330,
-      1143,
-      1112,
-      914,
-      836,
-      656,
-      625,
-      552,
+      6745,
+      4105,
+      1341,
+      1245,
+      1243,
+      1087,
+      1006,
+      771,
+      716,
+      659,
+      551,
+      550,
       493,
-      475,
-      465,
-      455,
-      441,
-      329,
-      291,
-      265,
-      236,
-      234,
+      472,
+      448,
+      376,
+      331,
+      312,
+      280,
+      277,
+      251,
+      248,
+      246,
+      246,
+      224,
+      222,
+      222,
+      221,
       208,
-      206,
-      195,
-      188,
-      167,
-      167,
-      166,
-      151,
-      143,
-      130,
+      197,
+      176,
+      172,
+      172,
+      170,
+      159,
+      149,
+      145,
+      144,
+      134,
       129,
-      129,
-      118,
+      109,
       108,
-      95,
-      95,
+      108,
+      108,
+      107,
       94,
       94,
-      92,
-      85,
+      93,
+      87,
+      87,
       83,
-      83,
+      82,
       80,
-      69,
-      69,
-      67,
-      59,
-      57,
-      56,
-      55
+      74
     ]
   }
 }
